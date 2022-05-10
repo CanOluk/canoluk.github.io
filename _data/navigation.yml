@@ -6,7 +6,7 @@ main:
   # - title: "Talks"
   #  url: /talks/    
 
-   - title: "About Me"
+  - title: "About Me"
     url: /about_me/    
     
   # - title: "Portfolio"
