@@ -8,4 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-Here is my [CV](https://github.com/academicpages/academicpages.github.io). 
+Here is my [CV](http://canoluk.github.io/files/CV_CanOluk.pdf). 
