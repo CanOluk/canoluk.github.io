@@ -8,4 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-Here is my [CV](http://canoluk.github.io/files/CV_CanOluk.pdf). 
+Here is my [CV](http://canoluk.github.io/files/CV_CanOluk.pdf). You can contact me by e-mail: cnoluk@gmail.com.
