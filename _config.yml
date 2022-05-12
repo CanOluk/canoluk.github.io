@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=NwCzTz8AAAAJ&hl=tr&oi=ao"
-  email            :
+  email            : "cnoluk@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -175,10 +175,10 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
+  about_me:
     output: true
     permalink: /:collection/:path/
-  publications:
+  research:
     output: true
     permalink: /:collection/:path/
   portfolio:
