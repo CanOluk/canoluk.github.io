@@ -26,4 +26,11 @@ Past Projects
 ======
 
 
+Visual Perception of 3D Slant
+------
+
+**Published Work**
+
+**Github Pages**
+
 
