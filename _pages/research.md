@@ -13,6 +13,14 @@ Research Interests
 Current Projects
 ======
 
+Visual Target Detection Under Uncertainty
+------
+
+**Published Work**
+
+**Github Pages**
+
+
 
 Past Projects
 ======
