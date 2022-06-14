@@ -31,7 +31,7 @@ Visual Perception of 3D Slant
 
 **Published Work**
 
-**Oluk, C**., Bonnen, K., Burge, J., Cormack, L. K., & Geisler, W. S. (2022). Stereo slant discrimination of planar 3D surfaces: Frontoparallel versus planar matching. Journal of Vision, 22(5), 6-6.[Link](https://jov.arvojournals.org/article.aspx?articleid=2778771)
+[**Oluk, C**., Bonnen, K., Burge, J., Cormack, L. K., & Geisler, W. S. (2022)](https://jov.arvojournals.org/article.aspx?articleid=2778771). Stereo slant discrimination of planar 3D surfaces: Frontoparallel versus planar matching. Journal of Vision, 22(5), 6-6.
 
 **GitHub Pages**
 
