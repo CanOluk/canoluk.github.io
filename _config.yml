@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Can Oluk"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Can Oluk"
 description              : &description "personal description"
