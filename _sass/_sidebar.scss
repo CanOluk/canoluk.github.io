@@ -114,11 +114,12 @@
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 10px; 
   }
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-size: $type-size-7;
 }
 
 .author__bio {
