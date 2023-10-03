@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: true
 ---
 
-You can find my scholar profile [here](https://scholar.google.com/citations?hl=en&user=NwCzTz8AAAAJ).
+You can find my scholar profile [here](https://scholar.google.com/citations?hl=en&user=NwCzTz8AAAAJ). 
 
 
 
@@ -15,6 +15,11 @@ You can find my scholar profile [here](https://scholar.google.com/citations?hl=e
 
 Current Projects
 ======
+
+Confidence in Global Motion Direction Discrimination 
+------
+Estimation of the direction of visual motion is essential for most living beings. It is also vital to accurately judge the confidence about the estimated direction of motion. In the formation of confidence, both the visual reliability of the stimuli and other visual-cognitive factors play a role. However, the contributions of each mechanism are relatively unknown. For a straightforward eight-alternative global motion direction discrimination task, we aim to identify the role of these mechanisms by measuring and modeling the human performance (perceptual and confidence) with a two-interval forced choice confidence experiment.
+
 
 Visual Target Detection Under Uncertainty
 ------
