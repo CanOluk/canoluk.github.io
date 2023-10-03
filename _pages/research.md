@@ -18,7 +18,7 @@ Current Projects
 
 Confidence in Global Motion Direction Discrimination 
 ------
-Estimation of the direction of visual motion is essential for most living beings. It is also vital to accurately judge the confidence about the estimated direction of motion. In the formation of confidence, both the visual reliability of the stimuli and other visual-cognitive factors play a role. For a straightforward global motion direction discrimination task, we aim to identify the role of these mechanisms by measuring and modeling the human performance (perceptual and confidence).
+Estimation of the direction of visual motion is essential for most living beings. It is also vital to accurately judge the confidence about the estimated direction of motion. In the formation of confidence, both the visual reliability of the stimuli and other visual-cognitive factors play a role. For a straightforward global motion direction discrimination task, we aim to identify the role of these mechanisms by measuring and modeling the human performance (perceptual and metacognitive).
 
 
 Visual Target Detection Under Uncertainty
