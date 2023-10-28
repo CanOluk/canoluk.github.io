@@ -25,6 +25,8 @@ Visual Target Detection Under Uncertainty
 ------
 Detection of visual targets is integral to survival and everyday functioning. In the real world, the visual system operates under very high levels of extrinsic uncertainty (multiple simultaneous dimensions of uncertainty) about target and background properties. The aim of the project is to better understand how the human visual system detects objects while being uncertain about the properties of the object and its background (i.e., being uncertain about the exact visual pattern to look for).
 
+[**Oluk, C**., & Geisler, W. S. (2022)](https://jov.arvojournals.org/article.aspx?articleid=2792955). Effects of Target-Amplitude and Background-Contrast Uncertainty Predicted by a Normalized Template-Matching Observer. Journal of Vision, 23(12), 8. [GitHub Page.](https://github.com/CanOluk/Amplitude_Contrast_Uncertainty) 
+
 My Dissertation is available [online](https://repositories.lib.utexas.edu/handle/2152/115685).
 
 
