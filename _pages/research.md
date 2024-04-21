@@ -4,17 +4,10 @@ title: ""
 permalink: /research/
 author_profile: true
 ---
-
-
-
-
 <br/>
 
 Research Interests
 ===
-
-
-
 Accurately estimating physical variables from sensory signals (images) does not ensure an agent's success in real-world tasks. Visual perception needs to be: (i) robust against numerous contextual variables originating from many independent physical processes in nature; (ii) flexible to adapt the estimation process to accommodate the agent's internal and external needs and specific environments; and (iii) able to dynamically prioritize certain variables constant presence of risks and opportunities in the world. Integrating these three capacities into a single system (perceptual agent)  imposes a strong constraint on the visual system.
 
 These capabilities are demonstrated by humans' remarkable ability to perform various simple visual tasks, exhibiting rich, diverse, and sometimes odd behavior. I aim to progressively build image-computable pseudo-agent models capable of predicting outcomes for various simple experiments to improve our understanding of perceptual agency. Thus, I am interested in constructing datasets that will showcase these capabilities to develop standard models of visual perception by benchmarking various pseudo-agent models against the datasets. 
