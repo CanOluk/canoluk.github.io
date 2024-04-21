@@ -11,12 +11,11 @@ author_profile: true
 <br/>
 
 Research Interests
-======
+===
 
 
 Active Projects
-======
-
+===
 Confidence in Global Motion Direction Discrimination 
 ------
 Estimation of the direction of visual motion is essential for most living beings. It is also vital to accurately judge the confidence about the estimated direction of motion. In the formation of confidence, both the visual reliability of the stimuli and other visual-cognitive factors play a role. For a straightforward global motion direction discrimination task, we aim to identify the role of these mechanisms by measuring and modeling the human performance (perceptual and metacognitive).
@@ -34,9 +33,7 @@ My Dissertation is available [online](https://repositories.lib.utexas.edu/handle
 
 
 Previous Projects
-======
-
-
+===
 Visual Perception of 3D Slant
 ------
 Binocular stereo cues are important for discriminating 3D surface orientation, especially at near distances. We devised a single-interval task where observers discriminated the slant of a densely textured planar test surface relative to a textured planar surround reference surface. Slant discrimination performance was measured as a function of the reference slant and the level of uncorrelated white noise added to the test-plane images in the left and right eyes. We compared human performance with an approximate ideal observer and two subideal observers. 
