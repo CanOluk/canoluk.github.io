@@ -5,15 +5,16 @@ permalink: /research/
 author_profile: true
 ---
 
-You can find my scholar profile [here](https://scholar.google.com/citations?hl=en&user=NwCzTz8AAAAJ). 
+
 
 
 <br/>
 
+Research Interests
+======
 
 
-
-Current Projects
+Active Projects
 ======
 
 Confidence in Global Motion Direction Discrimination 
@@ -32,7 +33,7 @@ My Dissertation is available [online](https://repositories.lib.utexas.edu/handle
 
 
 
-Past Projects
+Previous Projects
 ======
 
 
