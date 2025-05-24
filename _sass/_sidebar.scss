@@ -78,7 +78,7 @@
 
   @include breakpoint($large) {
     display: block;
-    width: 360px;
+    width: 300px;
     height: auto;
   }
 
@@ -89,12 +89,12 @@
     @include breakpoint($large) {
       padding: 5px;
       border: 1px solid $border-color;
-      width: 240px;
+      width: 200px;
       height: auto;
     }
     @include breakpoint($x-large) {
       padding: 5px;
-      width: 360px;
+      width: 300px;
       height: auto;
       border: 1px solid $border-color;
     }
