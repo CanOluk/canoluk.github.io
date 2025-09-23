@@ -121,7 +121,7 @@
   text-align: center;
 
   @include breakpoint($large) {
-    margin-left: 60px;
+    margin-left: 100px;
     text-align: left;
   }
 }
