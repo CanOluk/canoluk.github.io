@@ -12,11 +12,11 @@ I am a postdoctoral researcher in the Laboratory of Psychophysics ([LPSY](https:
 
 <div style="height:24px;"></div>
 
-<div style="font-size: 80%;">I am interested in understanding human behaviour and its underlying neural mechanisms, which remains one of science’s toughest challenges despite enormous interest. I primarily study vision because many fundamental human behaviours rely heavily on visual signals.</div>
+<span style="font-size: 85%;">I am interested in understanding human behaviour and its underlying neural mechanisms, which remains one of science’s toughest challenges despite enormous interest. I primarily study vision because many fundamental human behaviours rely heavily on visual signals.</span>
 
-<div style="height:12px;"></div>
 
-<div style="font-size: 80%;">To understand visual processing, I build image computable models to explain how the human visual system extracts information from the physical world to guide action across tasks such as slant perception, motion direction estimation, and target detection ([Google Scholar](https://scholar.google.com/citations?user=NwCzTz8AAAAJ&hl=tr&oi=ao), [models](https://github.com/CanOluk)). In particular, I extend principled, interpretable models (e.g., Bayesian ideal observers) to relatively complex tasks and test their generalisability across task variations. I am also interested in theory of model selection; see my [Research](https://canoluk.github.io/research/).</div>
+
+<span style="font-size: 85%;">To understand visual processing, I build image computable models to explain how the human visual system extracts information from the physical world to guide action across tasks such as slant perception, motion direction estimation, and target detection ([Google Scholar](https://scholar.google.com/citations?user=NwCzTz8AAAAJ&hl=tr&oi=ao), [models](https://github.com/CanOluk)). In particular, I extend principled, interpretable models (e.g., Bayesian ideal observers) to relatively complex tasks and test their generalisability across task variations. I am also interested in theory of model selection; see my [Research](https://canoluk.github.io/research/).</span>
 
 
 
