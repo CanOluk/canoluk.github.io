@@ -121,7 +121,7 @@
   text-align: center;
 
   @include breakpoint($large) {
-    margin-left: 40px;
+    margin-left: 60px;
     text-align: left;
   }
 }
@@ -138,7 +138,7 @@
 
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-4;
+  font-size: $type-size-5;
 }
 
 .author__bio {
