@@ -16,7 +16,7 @@ I am a postdoctoral researcher in the Laboratory of Psychophysics ([LPSY](https:
 
 <span style="font-size: 85%;"> My research focuses on building image-computable models to explain how the human visual system extracts information from the physical world to guide action across tasks such as slant perception, motion direction estimation, and target detection ([Google Scholar](https://scholar.google.com/citations?user=NwCzTz8AAAAJ&hl=tr&oi=ao), [models](https://github.com/CanOluk)). In particular, I extend principled, interpretable models (e.g., Bayesian ideal observers) to relatively complex tasks and test their generalisability across task variations. I am also interested in theory of model selection; see my [Research](https://canoluk.github.io/research/).</span>
 
-![My figure](/assets/images/figure.png){: .align-center width="300"}
+![My figure](/images/figure.png){: .align-center width="300"}
 
 
 
