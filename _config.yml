@@ -223,7 +223,7 @@ defaults:
       path: ""
       type: research
     values:
-      layout: single
+      layout: single_full
       author_profile: false
       share: true
       comments: true
