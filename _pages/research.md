@@ -1,8 +1,14 @@
 ---
-title: ""
+title: "Research"
 permalink: /research/
+layout: single
 author_profile: false
+classes: wide     # make the main column span the full width
+toc: false        # optional: remove right-side TOC if present
+sidebar:          # ensure no nav sidebar is injected
+  nav:
 ---
+
 Research Interests
 ===
 Accurately estimating physical variables from sensory signals (images) does not ensure an agent's success in real-world tasks. Visual perception needs to be: (i) robust against numerous contextual variables originating from many independent physical processes in nature; (ii) flexible to adapt the estimation process to accommodate the agent's internal and external needs and specific environments; and (iii) able to dynamically prioritize certain variables constant presence of risks and opportunities in the world. Integrating these three capacities into a single system (perceptual agent)  imposes a strong constraint on the visual system.
