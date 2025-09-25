@@ -1,12 +1,10 @@
 ---
 title: ""
 permalink: /research/
-layout: single
-classes: research-full
+layout: single_full
 author_profile: false
 toc: false
 ---
-
 {% assign entries_layout = 'list' %}
 <div class="entries-{{ entries_layout }}">
   {% for doc in site.research %}
