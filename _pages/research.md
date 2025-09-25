@@ -1,13 +1,18 @@
 ---
-title: "Research"
+title: ""
 permalink: /research/
 layout: single
+classes: research-full
 author_profile: false
-classes: wide     # make the main column span the full width
-toc: false        # optional: remove right-side TOC if present
-sidebar:          # ensure no nav sidebar is injected
-  nav:
+toc: false
 ---
+
+{% assign entries_layout = 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for doc in site.research %}
+    {% include archive-single.html %}
+  {% endfor %}
+</div>
 
 Research Interests
 ===
