@@ -40,10 +40,6 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-/* Only affect the Research page */
-.page.research-full,
-.page.research-full .page__inner-wrap {
-  width: 100%;
-  padding-right: 0;
-}
-.page.research-full { float: none; }
+/* Only pages using layout: single_full */
+.layout--single_full .page { float: none; width: 100%; }
+
