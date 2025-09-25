@@ -4,13 +4,8 @@ permalink: /research/
 layout: single_full
 author_profile: false
 toc: false
+classes: research-full
 ---
-{% assign entries_layout = 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% for doc in site.research %}
-    {% include archive-single.html %}
-  {% endfor %}
-</div>
 
 Research Interests
 ===
