@@ -1,10 +1,9 @@
 ---
-title: "Research"
+title: ""
 permalink: /research/
 layout: single_full
 author_profile: false
 toc: false
-classes: research-full
 ---
 
 Research Interests
