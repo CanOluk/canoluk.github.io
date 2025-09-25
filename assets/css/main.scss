@@ -40,5 +40,16 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+/* Only the Research page: reclaim the reserved gutter from the single layout */
+@media (min-width: 57.8125em) {
+  .page.research-full {
+    width: 100% !important;
+    float: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
 
 
