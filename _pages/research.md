@@ -1,9 +1,10 @@
 ---
-title: ""
+title: ""          # was empty — set a real title
 permalink: /research/
 layout: single_full
 toc: true
 toc_sticky: true
+# optional: toc_label: "On this page"
 ---
 
 
