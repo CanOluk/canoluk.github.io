@@ -2,13 +2,9 @@
 ---
 
 /*
- *    Minimal Mistakes Jekyll Theme
- *
- *  - Michael Rose
- *  - mademistakes.com
- *  - https://twitter.com/mmistakes
- *
-*/
+ * Minimal Mistakes Jekyll Theme
+ *  - Michael Rose · mademistakes.com
+ */
 
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
@@ -40,31 +36,42 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-/* Only for fullwidth layout pages */
+/* Only for fullwidth layout pages (keep your original behavior) */
 @media (min-width: 57.8125em) {
   .page.page--fullwidth {
     width: 100% !important;
     float: none !important;
     padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-right: 1rem !important; /* content padding, not TOC gutter */
     margin-right: 0 !important;
   }
 }
 
-
-/* ToC for single_full pages */
-.toc-container { margin: 1rem 0 2rem; padding: .75rem 1rem; border: 1px solid #e6e6e6; border-radius: .5rem; }
-.toc-container nav ul { list-style: none; margin: .25rem 0 0; padding-left: 0; }
-.toc-container li { margin: .25rem 0; }
-.toc-container .toc-h2 > a { font-weight: 600; }
-.toc-sub { margin-top: .25rem; padding-left: 1rem; }
-
+/* ===== Kramdown TOC on fullwidth pages (single_full) =====
+   Uses #markdown-toc that {:toc} generates. Right gutter appears
+   ONLY when body.has-toc is present on this page. */
 @media (min-width: 57.8125em) {
-  /* keep content from flowing under the right-hand TOC */
-  .page.page--fullwidth .page__content { padding-right: 20rem; }
-  .page.page--fullwidth .toc-container { float: right; width: 18rem; margin: 0 0 1rem 2rem; }
-  .page.page--fullwidth .toc-container.sticky {
-    position: sticky; top: 5.5rem; max-height: calc(100vh - 6.5rem); overflow: auto;
+  body.has-toc .page.page--fullwidth .page__content {
+    padding-right: 20rem; /* reserve space for the right-hand TOC */
+  }
+
+  body.has-toc #markdown-toc {
+    float: right;
+    width: 18rem;
+    margin: 0 0 1rem 2rem;
+    position: sticky;
+    top: 5.5rem;                     /* adjust for your masthead height */
+    max-height: calc(100vh - 6.5rem);
+    overflow: auto;
   }
 }
 
+/* Optional: nicer TOC look */
+#markdown-toc {
+  border: 1px solid #e6e6e6;
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+}
+#markdown-toc > ul { list-style: none; margin: .25rem 0 0; padding-left: 0; }
+#markdown-toc li { margin: .25rem 0; }
+#markdown-toc a { text-decoration: none; }
