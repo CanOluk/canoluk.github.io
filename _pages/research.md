@@ -1,5 +1,5 @@
 ---
-title: ""          # was empty — set a real title
+title: "Research Lines"          # was empty — set a real title
 permalink: /research/
 layout: single_full
 toc: true
