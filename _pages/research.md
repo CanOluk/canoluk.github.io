@@ -4,6 +4,7 @@ permalink: /research/
 layout: single_full
 author_profile: false
 classes: left-toc  # custom hook for CSS below
+toc: false
 ---
 <div class="toc-left">
   {% include toc %}
