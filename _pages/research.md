@@ -6,14 +6,7 @@ author_profile: false
 classes:
   - has-toc         # lets CSS know this page can show a right-hand TOC
 ---
----
-layout: single_full
-title: "Research"
-permalink: /research/
-author_profile: true
-classes:
-  - has-toc         # lets CSS know this page can show a right-hand TOC
----
+
 
 * On this page
 {:toc}
