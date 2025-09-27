@@ -1,4 +1,6 @@
+# =======================
 # Site Settings
+# =======================
 locale                   : "en-US"
 title                    : "Home"
 title_separator          : "-"
@@ -13,7 +15,9 @@ words_per_minute         : 160
 future                   : true
 read_more                : "disabled"
 talkmap_link             : false
-theme                    : jekyll-theme-primer
+
+# IMPORTANT: do NOT set a GitHub Pages theme here (you’re using AcademicPages/MM locally)
+# theme: jekyll-theme-primer   # ← remove this line
 
 comments:
   provider               :
@@ -46,13 +50,14 @@ staticman:
 atom_feed:
   path                   :
 
-# SEO Related
+# =======================
+# SEO / Social
+# =======================
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
-# Social Sharing
 twitter:
   username               : &twitter
 facebook:
@@ -66,13 +71,17 @@ social:
   name                   :
   links: []
 
+# =======================
 # Analytics
+# =======================
 analytics:
   provider               : "google-universal"
   google:
     tracking_id          :
 
-# Site Author
+# =======================
+# Author
+# =======================
 author:
   name             : "Can Oluk"
   avatar           : "can_oluk.JPG"
@@ -110,7 +119,9 @@ author:
   youtube          :
   wikipedia        :
 
+# =======================
 # Reading Files
+# =======================
 include:
   - .htaccess
   - _pages
@@ -148,16 +159,20 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+# =======================
 # Conversion
-markdown: kramdown          # << force Kramdown (needed for {: ... } attributes)
+# =======================
+markdown: kramdown          # use Kramdown so {: data-... } works
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-# Markdown Processing
+# =======================
+# Markdown (Kramdown) Options
+# =======================
 kramdown:
-  input: GFM                 # GitHub-flavored Markdown via Kramdown
+  input: GFM
   hard_wrap: false
   auto_ids: true
   footnote_nr: 1
@@ -166,7 +181,9 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# =======================
 # Collections
+# =======================
 collections:
   about_me:
     output: true
@@ -181,7 +198,9 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+# =======================
 # Defaults
+# =======================
 defaults:
   - scope:
       path: ""
@@ -236,18 +255,24 @@ defaults:
       author_profile: true
       share: true
 
+# =======================
 # Sass/SCSS
+# =======================
 sass:
   sass_dir: _sass
   style: compressed
 
-# Outputting
+# =======================
+# Output
+# =======================
 permalink: /:categories/:title/
 # paginate: 5
 # paginate_path: /page:num/
 timezone: Europe/Zurich
 
-# Plugins (GitHub Pages–compatible)
+# =======================
+# Plugins (GitHub Pages–supported)
+# =======================
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -258,13 +283,15 @@ plugins:
   - jekyll-seo-tag
   - jekyll-titles-from-headings
 
-# Jekyll Titles From Headings — keep visible H1 in content
+# Titles-from-headings: keep visible H1 in content
 titles_from_headings:
   enabled: true
   strip_title: false
   collections: true
 
+# =======================
 # HTML Compression
+# =======================
 compress_html:
   clippings: all
   ignore:
