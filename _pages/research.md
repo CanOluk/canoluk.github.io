@@ -7,34 +7,7 @@ classes: left-toc
 toc: false
 ---
 
-<style>
-/* LEFT TOC for `layout: single_full` using the include */
-@media (min-width:1100px){
-  .page__content .toc-left{
-    float:left;
-    width:260px;
-    position:sticky; top:6rem;
-    max-height:calc(100vh - 6rem);
-    overflow:auto;
-    margin-right:2rem;
-  }
-  /* push all siblings to the right of the TOC */
-  .page__content > :not(.toc-left){
-    margin-left:280px;   /* 260 + 20 gap */
-    min-width:0;
-  }
-}
-/* stack on small screens */
-@media (max-width:1099px){
-  .page__content .toc-left{float:none; width:auto; position:static; max-height:none; margin:0 0 1rem 0;}
-  .page__content > :not(.toc-left){margin-left:0;}
-}
-</style>
 
-
-<div class="toc-left">
-  {% include toc.html html=content %}
-</div>
 
 ## 1. Visual Perception
 
