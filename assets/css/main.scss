@@ -145,3 +145,37 @@ body.has-tight-top #main            { margin-top: 0; padding-top: 0; }
 body.has-tight-top .page            { margin-top: 0; padding-top: 0; }
 body.has-tight-top .page__inner-wrap{ padding-top: 0.5rem; }  /* tweak this number to taste */
 body.has-tight-top .page__title     { margin-top: 0; }        /* keep H1 snug to the top */
+
+/* === Page-local accents used only on /research/ === */
+
+/* Bigger, colored H3 (“My approach”) */
+.page__content h3.approach-lg {
+  font-size: clamp(1.35rem, 1.05rem + 1.1vw, 1.75rem); /* adjust if you want */
+  line-height: 1.3;
+  color: #0f766e;            /* teal accent */
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 0.55em;
+}
+
+/* Intro paragraph emphasis */
+.page__content p.intro-callout {
+  font-size: 1.1rem;         /* slightly larger body text */
+  line-height: 1.7;
+  color: #334155;            /* slate */
+  margin-top: 0.4rem;
+}
+
+/* Optional: links inside that intro paragraph */
+.page__content p.intro-callout a {
+  color: #0b6cff;
+  text-decoration: none;
+}
+.page__content p.intro-callout a:hover { text-decoration: underline; }
+
+/* Optional: highlight a few words inline */
+.page__content .key-term {
+  color: #0f172a;            /* deep heading color */
+  font-weight: 600;
+}
+
