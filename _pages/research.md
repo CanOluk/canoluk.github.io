@@ -6,6 +6,77 @@ author_profile: false
 toc: false
 ---
 
+<!-- In-page TOC -->
+<div id="toc" class="toc-container">
+  <h4>On this page</h4>
+  <nav aria-label="Table of contents">
+    <ul id="toc-list"></ul>
+  </nav>
+</div>
+
+<script>
+// Build a TOC from H2/H3 in the main content
+(function () {
+  const content = document.querySelector('.page__content');
+  if (!content) return;
+
+  // pick which headings to include:
+  const headings = content.querySelectorAll('h2, h3');
+
+  // simple slugify (matches kramdown-ish ids well)
+  const slug = s => s.toLowerCase().trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+
+  const ul = document.getElementById('toc-list');
+  if (!ul || headings.length === 0) return;
+
+  let lastH2Li = null;
+
+  headings.forEach(h => {
+    // ensure each heading has an id (kramdown usually adds this automatically)
+    if (!h.id) h.id = slug(h.textContent);
+
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = h.textContent;
+
+    if (h.tagName === 'H2') {
+      li.className = 'toc-h2';
+      li.appendChild(a);
+      ul.appendChild(li);
+      lastH2Li = li;
+    } else if (h.tagName === 'H3') {
+      li.className = 'toc-h3';
+      const sub = lastH2Li?.querySelector('ul') || document.createElement('ul');
+      if (!sub.parentElement) {
+        sub.className = 'toc-sub';
+        lastH2Li?.appendChild(sub);
+      }
+      const subLi = document.createElement('li');
+      subLi.appendChild(a);
+      sub.appendChild(subLi);
+    }
+  });
+})();
+</script>
+
+<style>
+/* Minimal styling + sticky behavior; move to main.scss later if you prefer */
+.toc-container { margin: 1rem 0 2rem; padding: .75rem 1rem; border: 1px solid #e6e6e6; border-radius: .5rem; }
+.toc-container nav ul { list-style: none; margin: .25rem 0 0; padding-left: 0; }
+.toc-container li { margin: .25rem 0; }
+.toc-container .toc-h2 > a { font-weight: 600; }
+.toc-sub { margin-top: .25rem; padding-left: 1rem; }
+
+/* On wide screens, float TOC right (works with your fullwidth rules) */
+@media (min-width: 57.8125em) {
+  .toc-container { float: right; width: 18rem; margin: 0 0 1rem 2rem; position: sticky; top: 5.5rem; max-height: calc(100vh - 6.5rem); overflow: auto; }
+  .page.page--fullwidth .page__content { padding-right: 20rem; }
+}
+</style>
 
 
 
