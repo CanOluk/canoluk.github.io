@@ -97,39 +97,41 @@
 .page__content h3,
 .page__content h4 { scroll-margin-top: 96px; }
 
-/* ===== Page-scoped dark mode =====
-   Turn on by adding `dark: true` in page front matter.
-   Your layout adds `page--dark` to the <article> when that flag is set. */
-.page--dark,
-.page--dark .page__two-col,
-.page--dark .page__content,
-.page--dark .sidebar__right,
-.page--dark .toc {
+/* ===== Page-wide dark mode (enabled when <body class="has-dark">) ===== */
+body.has-dark,
+body.has-dark #main,
+body.has-dark .masthead,
+body.has-dark .page__footer,
+body.has-dark .page,
+body.has-dark .page__two-col,
+body.has-dark .page__content,
+body.has-dark .sidebar__right,
+body.has-dark .toc {
   background: #0f0f10;
   color: #f2f2f2;
 }
 
 /* Headings and links in dark */
-.page--dark .page__content h1,
-.page--dark .page__content h2,
-.page--dark .page__content h3,
-.page--dark .page__content h4 { color: #ffffff; }
+body.has-dark .page__content h1,
+body.has-dark .page__content h2,
+body.has-dark .page__content h3,
+body.has-dark .page__content h4 { color: #ffffff; }
 
-.page--dark .page__content a,
-.page--dark .toc a { color: #a8c7ff; }
-.page--dark .page__content a:hover,
-.page--dark .toc a:hover { color: #d2e2ff; }
+body.has-dark .page__content a,
+body.has-dark .toc a { color: #a8c7ff; }
+body.has-dark .page__content a:hover,
+body.has-dark .toc a:hover { color: #d2e2ff; }
 
 /* Subtle divider on dark sidebar */
-.page--dark .sidebar__right { border-left-color: #2a2a2a; }
+body.has-dark .sidebar__right { border-left-color: #2a2a2a; }
 
 /* Tables and code blocks on dark */
-.page--dark .page__content table th,
-.page--dark .page__content table td { border-color: #2a2a2a; }
+body.has-dark .page__content table th,
+body.has-dark .page__content table td { border-color: #2a2a2a; }
 
-.page--dark pre,
-.page--dark code,
-.page--dark .highlight {
+body.has-dark pre,
+body.has-dark code,
+body.has-dark .highlight {
   background: #151515;
   color: #e6e6e6;
   border-color: #2a2a2a;
