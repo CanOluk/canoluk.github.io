@@ -1,7 +1,6 @@
 ---
 layout: compress
 ---
-
 {% include base_path %}
 
 <!doctype html>
@@ -11,7 +10,8 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body class="{% if page.tight_top %}has-tight-top{% endif %}">
+
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
@@ -25,5 +25,6 @@ layout: compress
     </div>
 
     {% include scripts.html %}
+
   </body>
 </html>
