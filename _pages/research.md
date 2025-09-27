@@ -6,6 +6,36 @@ author_profile: false
 classes: left-toc  # custom hook for CSS below
 toc: false
 ---
+
+<style>
+@media (min-width:1100px){
+  /* make the content area a 2-col grid */
+  .page__content{
+    display:grid;
+    grid-template-columns:260px minmax(0,1fr); /* TOC | content */
+    grid-column-gap:2rem;
+    align-items:start;
+  }
+  /* put the TOC block in column 1 (left) */
+  .page__content > .toc-left{
+    grid-column:1;
+    position:sticky; top:6rem;
+    max-height:calc(100vh - 6rem);
+    overflow:auto;
+  }
+  /* send everything else to column 2 (right) */
+  .page__content > :not(.toc-left){
+    grid-column:2; min-width:0;
+  }
+}
+/* stack on small screens */
+@media (max-width:1099px){
+  .page__content{display:block}
+  .toc-left{margin-bottom:1rem; position:static; max-height:none}
+}
+</style>
+
+
 <div class="toc-left">
   {% include toc %}
 </div>
