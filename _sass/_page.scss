@@ -20,12 +20,12 @@
   @include breakpoint($large) {
     @include span(9 of 12 last);
     @include prefix(0.5 of 12);
-    @include suffix(0 of 12);
+    @include suffix(1 of 12);
   }
    
   // On ultra-wide screens, drop it entirely
   @include breakpoint($x-large) {
-    @include suffix(0 of 12);
+    @include suffix(1 of 12);
   }
 
 
