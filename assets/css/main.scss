@@ -140,3 +140,11 @@
 .page__content > *:first-child + h4 { margin-top: 0.9rem; }
 
 
+/* === Tighten gap between masthead (top bar) and page title — only on pages with `tight_top: true` === */
+body.has-tight-top #main            { margin-top: 0; padding-top: 0; }
+body.has-tight-top .page            { margin-top: 0; padding-top: 0; }
+body.has-tight-top .page__inner-wrap{ padding-top: 0.5rem; }  /* tweak this number to taste */
+body.has-tight-top .page__title     { margin-top: 0; }        /* keep H1 snug to the top */
+
+
+
