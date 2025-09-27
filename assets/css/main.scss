@@ -55,13 +55,10 @@
 }
 
 /* Right sidebar behavior */
-.sidebar__right {
-  align-self: start; /* required for sticky inside CSS Grid */
-}
-
+.sidebar__right { align-self: start; }  /* helps sticky inside CSS Grid */
 .sidebar__right.sticky {
   position: sticky;
-  top: 80px; /* ≈ masthead height; adjust to your header */
+  top: 80px; /* adjust to clear your masthead (~65–90px typical) */
   max-height: calc(100vh - 80px);
   overflow: auto;
   padding-left: 1rem;
@@ -74,11 +71,11 @@
 .toc a { text-decoration: none; }
 .toc a:hover { text-decoration: underline; }
 
-/* Avoid anchor being hidden under fixed header */
+/* Prevent headings from hiding under fixed header when linked */
 .page__content h2,
 .page__content h3 { scroll-margin-top: 90px; }
 
-/* Mobile: stack */
+/* Mobile: stack columns and disable sticky */
 @media (max-width: 1024px) {
   .page__two-col { grid-template-columns: 1fr; }
   .sidebar__right.sticky { position: static; max-height: none; }
