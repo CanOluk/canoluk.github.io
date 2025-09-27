@@ -1,32 +1,40 @@
 ---
 layout: default
 ---
-{% include base_path %}
+{% raw %}{% include base_path %}
 
 <div id="main" role="main">
   <article class="page h-entry page--fullwidth">
     <div class="page__inner-wrap">
+
       {% if page.title %}
         <header><h1 class="page__title p-name">{{ page.title }}</h1></header>
       {% endif %}
 
-      <section class="page__content e-content">
+      <!-- BEGIN two-column wrapper -->
+      <div class="page__two-col">
 
+        <!-- LEFT: main content -->
+        <section class="page__content e-content">
+          {{ content }}
+        </section>
+
+        <!-- RIGHT: sticky TOC -->
         {% if page.toc %}
-        <!-- In-page TOC (no includes needed) -->
-        <div id="toc" class="toc-container {% if page.toc_sticky %}sticky{% endif %}">
-          <h4>{{ page.toc_label | default: "On this page" }}</h4>
-          <nav aria-label="Table of contents">
+        <aside class="sidebar__right{% if page.toc_sticky %} sticky{% endif %}" aria-label="On this page">
+          <nav class="toc" id="toc">
+            <h4 class="nav__title">{{ page.toc_label | default: "On this page" }}</h4>
             <ul id="toc-list"></ul>
           </nav>
-        </div>
+        </aside>
         {% endif %}
 
-        {{ content }}
-      </section>
+      </div>
+      <!-- END two-column wrapper -->
 
       {% if page.share %}{% include social-share.html %}{% endif %}
       {% if site.comments.provider and page.comments %}{% include comments.html %}{% endif %}
+
     </div>
   </article>
 </div>
@@ -34,12 +42,12 @@ layout: default
 {% if page.toc %}
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  const content = document.querySelector('article.page .page__content');
-  if (!content) return;
+  const content = document.querySelector('section.page__content');
+  const list = document.getElementById('toc-list');
+  if (!content || !list) return;
 
   const headings = content.querySelectorAll('h2, h3'); // add h4 if needed
-  const ul = document.getElementById('toc-list');
-  if (!ul || headings.length === 0) return;
+  if (!headings.length) return;
 
   const slug = s => s.toLowerCase().trim()
     .replace(/[^\w\s-]/g, '')
@@ -59,13 +67,16 @@ document.addEventListener('DOMContentLoaded', function () {
       const li = document.createElement('li');
       li.className = 'toc-h2';
       li.appendChild(a);
-      ul.appendChild(li);
+      list.appendChild(li);
       lastH2Li = li;
-    } else { // H3 branch
-      const sub = lastH2Li?.querySelector('ul') || document.createElement('ul');
-      if (!sub.parentElement) {
+    } else {
+      // H3
+      if (!lastH2Li) return; // guard if H3 appears before any H2
+      let sub = lastH2Li.querySelector('ul');
+      if (!sub) {
+        sub = document.createElement('ul');
         sub.className = 'toc-sub';
-        lastH2Li?.appendChild(sub);
+        lastH2Li.appendChild(sub);
       }
       const subLi = document.createElement('li');
       subLi.appendChild(a);
@@ -74,4 +85,4 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
-{% endif %}
+{% endif %}{% endraw %}
