@@ -10,7 +10,7 @@ toc: false
   {% include toc %}
 </div>
 
-<div class="content-wrap">
+
 
 ## 1. Visual Perception
 
@@ -72,4 +72,4 @@ The theoretical model space for each task is vast, and with recent advances in m
 ### Examples
 
 ** Efficiency as a model selection criteria (ongoing) **
-</div>
+
