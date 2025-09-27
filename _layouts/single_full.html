@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const list = document.getElementById('toc-list');
   if (!content || !list) return;
 
-  /* Read H2/H3/H4 */
+  /* Collect H2/H3/H4 headings from the rendered HTML */
   const headings = content.querySelectorAll('h2, h3, h4');
   if (!headings.length) return;
 
@@ -60,7 +60,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const a = document.createElement('a');
     a.href = '#' + h.id;
-    a.textContent = h.textContent;
+
+    /* Prefer a custom label if present:
+       1) data-toc-label attribute (Markdown: {data-toc-label="Label"})
+       2) <span class="toc-label">Label</span> inside the heading
+       3) Fallback: text up to the first colon, else full text */
+    const label =
+      h.getAttribute('data-toc-label') ||
+      (h.querySelector('.toc-label') ? h.querySelector('.toc-label').textContent : null) ||
+      (function () {
+        const t = h.textContent.trim();
+        const i = t.indexOf(':');
+        return i > -1 ? t.slice(0, i) : t;
+      })();
+
+    a.textContent = label;
 
     if (h.tagName === 'H2') {
       const li = document.createElement('li');
@@ -71,13 +85,18 @@ document.addEventListener('DOMContentLoaded', function () {
     } else if (h.tagName === 'H3') {
       const sub = lastH2?.querySelector('ul') || document.createElement('ul');
       if (!sub.parentElement && lastH2) { sub.className = 'toc-sub'; lastH2.appendChild(sub); }
-      const li = document.createElement('li'); li.className = 'toc-h3'; li.appendChild(a);
+      const li = document.createElement('li');
+      li.className = 'toc-h3';
+      li.appendChild(a);
       (lastH2 ? sub : list).appendChild(li);
       lastH3 = li;
-    } else { /* H4 */
+    } else {
+      /* H4 */
       const sub2 = lastH3?.querySelector('ul') || document.createElement('ul');
       if (!sub2.parentElement && lastH3) { sub2.className = 'toc-sub'; lastH3.appendChild(sub2); }
-      const li = document.createElement('li'); li.className = 'toc-h4'; li.appendChild(a);
+      const li = document.createElement('li');
+      li.className = 'toc-h4';
+      li.appendChild(a);
       (lastH3 ? sub2 : list).appendChild(li);
     }
   });
