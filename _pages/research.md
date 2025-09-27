@@ -33,7 +33,7 @@ toc: false
 
 
 <div class="toc-left">
-  {% include toc %}
+  {% include toc.html html=content %}
 </div>
 
 ## 1. Visual Perception
