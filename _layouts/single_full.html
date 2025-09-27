@@ -4,10 +4,10 @@ layout: default
 {% include base_path %}
 
 <div id="main" role="main">
-   <article class="page h-entry page--fullwidth{% if page.dark %} page--dark{% endif %}">
+  <article class="page h-entry page--fullwidth{% if page.dark %} page--dark{% endif %}">
     <div class="page__inner-wrap">
 
-      {% if page.title %}
+      {% if page.title and page.hide_title != true %}
         <header><h1 class="page__title p-name">{{ page.title }}</h1></header>
       {% endif %}
 
@@ -22,7 +22,9 @@ layout: default
         {% if page.toc %}
         <aside class="sidebar__right{% if page.toc_sticky %} sticky{% endif %}" aria-label="On this page">
           <nav class="toc" id="toc">
-            <h4 class="nav__title">{{ page.toc_label | default: "On this page" }}</h4>
+            {% if page.toc_label and page.toc_label != false %}
+              <h4 class="nav__title">{{ page.toc_label }}</h4>
+            {% endif %}
             <ul id="toc-list"></ul>
           </nav>
         </aside>
