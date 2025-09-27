@@ -36,7 +36,7 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-/* ===== Fullwidth page baseline (keep your original behavior) ===== */
+/* ===== Fullwidth page baseline (keep original behavior) ===== */
 @media (min-width: 57.8125em) {
   .page.page--fullwidth {
     width: 100% !important;
@@ -46,50 +46,94 @@
     margin-right: 0 !important;
   }
 }
-/* Force a two-column layout that's immune to older float rules */
+
+/* ===== Two-column layout (robust against legacy floats) ===== */
 .page__two-col {
-  display: flex;              /* robust against legacy float-based CSS */
+  display: flex;
   gap: 2rem;
   align-items: flex-start;
 }
 
-/* Content stretches, allows shrinking when the sidebar claims space */
+/* Content expands, allows wrap instead of squeezing sidebar */
 .page__two-col .page__content {
   flex: 1 1 auto;
-  min-width: 0;               /* critical: allows text to wrap instead of forcing sidebar tiny */
+  min-width: 0; /* critical so long lines don’t force sidebar to collapse */
 }
 
-/* Sidebar gets a fixed, readable width (tune to taste) */
+/* Sidebar: readable fixed width */
 .sidebar__right {
-  flex: 0 0 360px;            /* was collapsing; now fixed width */
+  flex: 0 0 360px;
   width: 360px;               /* belt-and-suspenders */
   box-sizing: border-box;
-  /* kill any floats or widths coming from the theme */
-  float: none !important;
+  float: none !important;     /* neutralize legacy float rules if any */
   max-width: none !important;
 }
 
-/* Sticky behavior (keep if you already have it) */
+/* Sticky behavior */
 .sidebar__right.sticky {
   position: sticky;
-  top: 84px;                  /* adjust to your masthead height */
+  top: 84px;                  /* adjust to masthead height */
   max-height: calc(100vh - 84px);
   overflow: auto;
-  padding-left: 1rem;
+  padding-left: 1.25rem;      /* EXTRA left inner space requested */
   border-left: 1px solid #eaeaea;
 }
 
-/* TOC block should fill the sidebar */
-.toc { width: 100%; max-width: none; }
+/* TOC block fills the sidebar + left padding inside */
+.toc {
+  width: 100%;
+  max-width: none;
+  padding-left: 0.375rem;     /* gentle extra space from border */
+}
 .toc .nav__title { font-size: 1.05rem; margin: 0 0 .5rem; }
 .toc ul { list-style: none; margin: 0; padding: 0; }
-.toc li { margin: .3rem 0; }
+.toc li { margin: .3rem 0; padding-left: .25rem; }
 .toc .toc-h2 > a { font-weight: 600; }
 .toc a { font-size: 1rem; line-height: 1.5; text-decoration: none; }
 .toc a:hover { text-decoration: underline; }
 
-/* Anchor offset so headings don’t hide under masthead */
-.page__content h2, .page__content h3, .page__content h4 { scroll-margin-top: 96px; }
+/* Anchor offset so headings don’t hide under fixed masthead */
+.page__content h2,
+.page__content h3,
+.page__content h4 { scroll-margin-top: 96px; }
+
+/* ===== Page-scoped dark mode =====
+   Turn on by adding `dark: true` in page front matter.
+   Your layout adds `page--dark` to the <article> when that flag is set. */
+.page--dark,
+.page--dark .page__two-col,
+.page--dark .page__content,
+.page--dark .sidebar__right,
+.page--dark .toc {
+  background: #0f0f10;
+  color: #f2f2f2;
+}
+
+/* Headings and links in dark */
+.page--dark .page__content h1,
+.page--dark .page__content h2,
+.page--dark .page__content h3,
+.page--dark .page__content h4 { color: #ffffff; }
+
+.page--dark .page__content a,
+.page--dark .toc a { color: #a8c7ff; }
+.page--dark .page__content a:hover,
+.page--dark .toc a:hover { color: #d2e2ff; }
+
+/* Subtle divider on dark sidebar */
+.page--dark .sidebar__right { border-left-color: #2a2a2a; }
+
+/* Tables and code blocks on dark */
+.page--dark .page__content table th,
+.page--dark .page__content table td { border-color: #2a2a2a; }
+
+.page--dark pre,
+.page--dark code,
+.page--dark .highlight {
+  background: #151515;
+  color: #e6e6e6;
+  border-color: #2a2a2a;
+}
 
 /* Mobile: stack columns and disable sticky */
 @media (max-width: 1024px) {
