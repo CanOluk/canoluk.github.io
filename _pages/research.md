@@ -3,7 +3,6 @@ title: ""
 permalink: /research/
 layout: single_full
 author_profile: false
-classes: left-toc
 toc: false
 ---
 
