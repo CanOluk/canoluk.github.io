@@ -10,6 +10,8 @@ toc: false
   {% include toc %}
 </div>
 
+<div class="content-wrap">
+
 ## 1. Visual Perception
 
 I am interested in how the human visual system extracts information about the physical world to guide action. 
@@ -70,3 +72,4 @@ The theoretical model space for each task is vast, and with recent advances in m
 ### Examples
 
 ** Efficiency as a model selection criteria (ongoing) **
+</div>
