@@ -1,10 +1,13 @@
 ---
 title: ""
 permalink: /research/
-layout: single_full
+layout: single
 author_profile: false
 toc: true
+toc_sticky: true
+classes: wide   
 ---
+
 
 1 Visual Perception
 ===
