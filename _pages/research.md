@@ -8,13 +8,12 @@ hide_title: true           # <— hide the H1 on this page
 toc_label: false           # <— hide the “On this page” heading in the TOC
 ---
 
+
 ## 1. Visual Perception
 
 I am interested in how the human visual system extracts information about the physical world to guide action. 
 
-### My approach
-
-**Scaling principled, interpretable models to build mechanistic understanding.**
+### My approach: Scaling principled, interpretable models to build mechanistic understanding. {data-toc-label="My approach"}
 <figure style="max-width:720px; margin:0.75rem 0 0.25rem 0; text-align:left;">
   <img src="/images/figure.png" alt="My figure" style="display:block; width:100%; height:auto;">
 </figure>
