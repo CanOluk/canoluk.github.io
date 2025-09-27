@@ -5,14 +5,20 @@ layout: default
 
 <div id="main" role="main">
   <article class="page h-entry page--fullwidth">
-    <div class="page__inner-wrap">
+    <div class="page__inner-wrap singlefull--with-toc">
       {% if page.title %}
         <header><h1 class="page__title p-name">{{ page.title }}</h1></header>
       {% endif %}
 
-      <section class="page__content e-content">
+      <!-- CONTENT (left) -->
+      <section class="page__content e-content" itemprop="articleBody">
         {{ content }}
       </section>
+
+      <!-- TOC (right) -->
+      <aside class="toc-right" role="navigation" aria-label="Table of contents">
+        {% include toc.html html=content h_min=2 h_max=4 ordered=false %}
+      </aside>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
       {% if site.comments.provider and page.comments %}{% include comments.html %}{% endif %}
