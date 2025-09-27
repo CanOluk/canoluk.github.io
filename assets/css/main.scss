@@ -1,19 +1,12 @@
 ---
 ---
 
-/*
- * Minimal Mistakes Jekyll Theme
- *  - Michael Rose · mademistakes.com
- */
-
-@import "vendor/breakpoint/breakpoint"; // media query mixins
+@import "vendor/breakpoint/breakpoint";
 @import "variables";
 @import "mixins";
 @import "vendor/susy/susy";
-
 @import "reset";
 @import "base";
-
 @import "utilities";
 @import "animations";
 @import "tables";
@@ -23,119 +16,81 @@
 @import "navigation";
 @import "footer";
 @import "syntax";
-
 @import "forms";
-
 @import "page";
 @import "archive";
 @import "sidebar";
-
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/solid";
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-/* ===== Fullwidth page baseline (keep original behavior) ===== */
+/* Fullwidth page baseline (keep original behavior) */
 @media (min-width: 57.8125em) {
   .page.page--fullwidth {
     width: 100% !important;
     float: none !important;
     padding-left: 1rem !important;
-    padding-right: 1rem !important; /* base content padding, not TOC gutter */
+    padding-right: 1rem !important;
     margin-right: 0 !important;
   }
 }
 
-/* ===== Two-column layout (robust against legacy floats) ===== */
+/* Two-column layout (robust) */
 .page__two-col {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
 }
 
-/* Content expands, allows wrap instead of squeezing sidebar */
+/* Content expands; allows wrap instead of squeezing sidebar */
 .page__two-col .page__content {
   flex: 1 1 auto;
-  min-width: 0; /* critical so long lines don’t force sidebar to collapse */
+  min-width: 0;
 }
 
 /* Sidebar: readable fixed width */
 .sidebar__right {
   flex: 0 0 360px;
-  width: 360px;               /* belt-and-suspenders */
+  width: 360px;
   box-sizing: border-box;
-  float: none !important;     /* neutralize legacy float rules if any */
+  float: none !important;
   max-width: none !important;
 }
 
-/* Sticky behavior */
+/* Sticky behavior + spacing */
 .sidebar__right.sticky {
   position: sticky;
-  top: 84px;                  /* adjust to masthead height */
+  top: 84px; /* adjust to masthead height */
   max-height: calc(100vh - 84px);
   overflow: auto;
-  padding-left: 1.25rem;      /* EXTRA left inner space requested */
-  border-left: 1px solid #eaeaea;
+  padding-left: 1.25rem;     /* extra left inner space */
+  border-left: 1px solid $border-color; /* use theme border color */
 }
 
-/* TOC block fills the sidebar + left padding inside */
+/* TOC block fills the sidebar + gentle left padding */
 .toc {
   width: 100%;
   max-width: none;
-  padding-left: 0.375rem;     /* gentle extra space from border */
+  padding-left: 0.375rem;
 }
 .toc .nav__title { font-size: 1.05rem; margin: 0 0 .5rem; }
 .toc ul { list-style: none; margin: 0; padding: 0; }
 .toc li { margin: .3rem 0; padding-left: .25rem; }
-.toc .toc-h2 > a { font-weight: 600; }
-.toc a { font-size: 1rem; line-height: 1.5; text-decoration: none; }
+/* Inherit site link colors from skin */
+.toc a {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-decoration: none;
+  color: $link-color;
+}
 .toc a:hover { text-decoration: underline; }
 
-/* Anchor offset so headings don’t hide under fixed masthead */
+/* Anchor offset so headings don’t hide under a fixed masthead */
 .page__content h2,
 .page__content h3,
 .page__content h4 { scroll-margin-top: 96px; }
-
-/* ===== Page-wide dark mode (enabled when <body class="has-dark">) ===== */
-body.has-dark,
-body.has-dark #main,
-body.has-dark .masthead,
-body.has-dark .page__footer,
-body.has-dark .page,
-body.has-dark .page__two-col,
-body.has-dark .page__content,
-body.has-dark .sidebar__right,
-body.has-dark .toc {
-  background: #0f0f10;
-  color: #f2f2f2;
-}
-
-/* Headings and links in dark */
-body.has-dark .page__content h1,
-body.has-dark .page__content h2,
-body.has-dark .page__content h3,
-body.has-dark .page__content h4 { color: #ffffff; }
-
-body.has-dark .page__content a,
-body.has-dark .toc a { color: #a8c7ff; }
-body.has-dark .page__content a:hover,
-body.has-dark .toc a:hover { color: #d2e2ff; }
-
-/* Subtle divider on dark sidebar */
-body.has-dark .sidebar__right { border-left-color: #2a2a2a; }
-
-/* Tables and code blocks on dark */
-body.has-dark .page__content table th,
-body.has-dark .page__content table td { border-color: #2a2a2a; }
-
-body.has-dark pre,
-body.has-dark code,
-body.has-dark .highlight {
-  background: #151515;
-  color: #e6e6e6;
-  border-color: #2a2a2a;
-}
 
 /* Mobile: stack columns and disable sticky */
 @media (max-width: 1024px) {
