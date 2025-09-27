@@ -75,3 +75,34 @@
 #markdown-toc > ul { list-style: none; margin: .25rem 0 0; padding-left: 0; }
 #markdown-toc li { margin: .25rem 0; }
 #markdown-toc a { text-decoration: none; }
+
+
+/* Sticky right-side TOC for single_full pages driven by kramdown's {:toc} */
+@media (min-width: 57.8125em) {
+  /* Reserve space ONLY when this page opts in via classes: [has-toc] */
+  body.has-toc .page.page--fullwidth .page__content {
+    padding-right: 20rem;
+  }
+
+  /* kramdown outputs <nav id="markdown-toc">… */
+  body.has-toc #markdown-toc {
+    float: right;
+    width: 18rem;
+    margin: 0 0 1rem 2rem;
+    position: sticky;
+    top: 5.5rem;                 /* adjust if your masthead differs */
+    max-height: calc(100vh - 6.5rem);
+    overflow: auto;
+  }
+}
+
+/* Optional: nicer look for the generated TOC */
+#markdown-toc {
+  border: 1px solid #e6e6e6;
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+}
+#markdown-toc > ul { list-style: none; margin: .25rem 0 0; padding-left: 0; }
+#markdown-toc li { margin: .25rem 0; }
+#markdown-toc a { text-decoration: none; }
+
