@@ -147,4 +147,34 @@ body.has-tight-top .page__inner-wrap{ padding-top: 0.5rem; }  /* tweak this numb
 body.has-tight-top .page__title     { margin-top: 0; }        /* keep H1 snug to the top */
 
 
+/* === Page-only larger headings (for pages with `big_headings: true`) === */
+body.has-big-headings .page__content h2 {
+  font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2.125rem); /* ~24px → 34px */
+  line-height: 1.25;
+  margin-top: 1.1em;   /* keep rhythm tight with your title tweaks */
+  margin-bottom: 0.6em;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+}
+
+body.has-big-headings .page__content h3 {
+  font-size: clamp(1.25rem, 1.0rem + 0.9vw, 1.625rem); /* ~20px → 26px */
+  line-height: 1.3;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-weight: 650;
+}
+
+body.has-big-headings .page__content h4 {
+  font-size: clamp(1.1rem, 0.95rem + 0.6vw, 1.35rem);  /* ~18px → 22px */
+  line-height: 1.35;
+  margin-top: 0.9em;
+  margin-bottom: 0.45em;
+  font-weight: 600;
+}
+
+/* Optional: make the first section title stand out a bit more on this page */
+body.has-big-headings .page__content > h2:first-child { margin-top: 0.7rem; }
+
+
 
