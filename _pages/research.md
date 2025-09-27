@@ -3,14 +3,20 @@ title: ""
 permalink: /research/
 layout: single_full
 author_profile: false
+classes:
+  - has-toc         # lets CSS know this page can show a right-hand TOC
+---
+---
+layout: single_full
+title: "Research"
+permalink: /research/
 author_profile: true
-toc: true
-toc_sticky: true       
-toc_label: "On this page"
+classes:
+  - has-toc         # lets CSS know this page can show a right-hand TOC
 ---
 
-
-
+* On this page
+{:toc}
 
 ## 1. Visual Perception
 
