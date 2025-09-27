@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% raw %}{% include base_path %}
+{% include base_path %}
 
 <div id="main" role="main">
   <article class="page h-entry page--fullwidth">
@@ -11,9 +11,8 @@ layout: default
         <header><h1 class="page__title p-name">{{ page.title }}</h1></header>
       {% endif %}
 
-      <!-- BEGIN two-column wrapper -->
+      <!-- Two-column wrapper: content (left) + TOC (right) -->
       <div class="page__two-col">
-
         <!-- LEFT: main content -->
         <section class="page__content e-content">
           {{ content }}
@@ -28,13 +27,10 @@ layout: default
           </nav>
         </aside>
         {% endif %}
-
       </div>
-      <!-- END two-column wrapper -->
 
       {% if page.share %}{% include social-share.html %}{% endif %}
       {% if site.comments.provider and page.comments %}{% include comments.html %}{% endif %}
-
     </div>
   </article>
 </div>
@@ -70,8 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
       list.appendChild(li);
       lastH2Li = li;
     } else {
-      // H3
-      if (!lastH2Li) return; // guard if H3 appears before any H2
+      if (!lastH2Li) return; // guard: H3 before any H2
       let sub = lastH2Li.querySelector('ul');
       if (!sub) {
         sub = document.createElement('ul');
@@ -85,4 +80,4 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
-{% endif %}{% endraw %}
+{% endif %}
