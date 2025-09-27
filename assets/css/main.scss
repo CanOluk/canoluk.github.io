@@ -46,36 +46,38 @@
     margin-right: 0 !important;
   }
 }
-/* Two-column layout only when a page has a TOC */
+/* Two-column layout */
 .page__two-col {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px; /* content + sidebar width */
+  grid-template-columns: minmax(0, 1fr) clamp(320px, 28vw, 400px); /* wider TOC */
   gap: 2rem;
   align-items: start;
 }
 
-/* Right sidebar behavior */
-.sidebar__right { align-self: start; }  /* helps sticky inside CSS Grid */
+/* Sticky sidebar */
+.sidebar__right { align-self: start; }
 .sidebar__right.sticky {
   position: sticky;
-  top: 80px; /* adjust to clear your masthead (~65–90px typical) */
-  max-height: calc(100vh - 80px);
+  top: 84px; /* adjust to your masthead height */
+  max-height: calc(100vh - 84px);
   overflow: auto;
   padding-left: 1rem;
   border-left: 1px solid #eaeaea;
 }
 
-/* TOC list styles */
+/* TOC typography */
+.toc .nav__title { font-size: 1.05rem; margin: 0 0 .5rem; }
 .toc ul { list-style: none; margin: 0; padding: 0; }
-.toc .toc-sub { margin-left: 1rem; }
-.toc a { text-decoration: none; }
+.toc li { margin: .25rem 0; }
+.toc .toc-h2 > a { font-weight: 600; }
+.toc a { font-size: 1rem; line-height: 1.45; text-decoration: none; }
 .toc a:hover { text-decoration: underline; }
+.toc .toc-sub { margin-left: 1rem; }
 
-/* Prevent headings from hiding under fixed header when linked */
-.page__content h2,
-.page__content h3 { scroll-margin-top: 90px; }
+/* Prevent headings from hiding under a fixed header when jumped to */
+.page__content h2, .page__content h3, .page__content h4 { scroll-margin-top: 96px; }
 
-/* Mobile: stack columns and disable sticky */
+/* Mobile */
 @media (max-width: 1024px) {
   .page__two-col { grid-template-columns: 1fr; }
   .sidebar__right.sticky { position: static; max-height: none; }
