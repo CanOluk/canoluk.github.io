@@ -6,23 +6,36 @@ author_profile: false
 toc: false
 ---
 
-Research Interests
+1 Visual Perception
 ===
-Accurately estimating physical variables from sensory signals (images) does not ensure an agent's success in real-world tasks. Visual perception needs to be: (i) robust against numerous contextual variables originating from many independent physical processes in nature; (ii) flexible to adapt the estimation process to accommodate the agent's internal and external needs and specific environments; and (iii) able to dynamically prioritize certain variables constant presence of risks and opportunities in the world. Integrating these three capacities into a single system (perceptual agent)  imposes a strong constraint on the visual system.
+I am interested in how the human visual system extracts information about the physical world to guide action. 
 
-These capabilities are demonstrated by humans' remarkable ability to perform various simple visual tasks, exhibiting rich, diverse, and sometimes odd behavior. I aim to progressively build image-computable pseudo-agent models capable of predicting outcomes for various simple experiments to improve our understanding of perceptual agency. Thus, I am interested in constructing datasets that will showcase these capabilities to develop standard models of visual perception by benchmarking various pseudo-agent models against the datasets. 
-
-Active Projects
-===
-
-Confidence in Global Motion Direction Discrimination 
+My approach: Scaling principled, interpretable models to build mechanistic understanding.
 ------
-Estimation of the direction of visual motion is essential for most living beings. It is also vital to accurately judge the confidence about the estimated direction of motion. In the formation of confidence, both the visual reliability of the stimuli and other visual-cognitive factors play a role. For a straightforward global motion direction discrimination task, we aim to identify the role of these mechanisms by measuring and modeling the human performance (perceptual and metacognitive).
+<figure class="align-center" style="max-width:480px; margin: 0.75rem auto 0.25rem;">
+  <img src="/images/figure.png" alt="My figure" style="display:block; width:100%; height:auto;">
+</figure>
 
+<div style="border:1px solid #ccc; border-radius:8px; padding:12px 16px; background:#fafafa; margin:12px 0;">
+  
+**Mechanistic understanding**: To understand the principles of visual processing, I develop and compare image-computable models that transform images into perceptual decisions. 
 
-Visual Target Detection Under Uncertainty
+**Principled and interpretable models**: A principled model is optimal with respect to a well-defined objective (cost function) under explicit, well-defined task-imposed and experimenter-imposed constraints, making its assumptions and thus its strengths and weaknesses rigorously specified. An interpretable model has clearly specified computational components whose roles in achieving the overall objective are transparent.
+
+**Scaling**: Such models are typically available only for narrowly defined, highly constrained (simple) tasks. By scaling, I mean (i) developing this class of models for relatively complex tasks that incorporate properties of natural settings, and (ii) designing models that generalize across variations of the same task. </div>
+
+The advantages:
 ------
-Detection of visual targets is integral to survival and everyday functioning. In the real world, the visual system operates under very high levels of extrinsic uncertainty (multiple simultaneous dimensions of uncertainty) about target and background properties. The aim of the project is to better understand how the human visual system detects objects while being uncertain about the properties of the object and its background (i.e., being uncertain about the exact visual pattern to look for).
+1. Posing novel questions about mechanisms of visal processing (e.g. Oluk et al., 2023)
+2. Allow us to explore the model space rigorously by thinking about the constraints and biologically plausible approbations (e.g. Oluk & Geisler, 2024)
+3. Provides us a benchmark performance where we can compare the human and other models performance, especially useful for gaining insight about the performance of machine learning models that can handle much complex tasks where benchmarks are unavailable (e.g. Oluk & Geisler, 2025)
+4. Applicable to broad range of problems (e.g. 3D perception, motion perception, target identification)
+
+Examples:
+------
+
+
+**1. Target Identification under high levels of uncertainty**  
 
 [**Oluk, C**., & Geisler, W. S. (2025)](https://jov.arvojournals.org/article.aspx?articleid=2802525). Target identification under high levels of amplitude, size, orientation and background uncertainty. Journal of Vision, 25(2), 3. [GitHub Page.](https://github.com/CanOluk/Target_Identification) 
 
@@ -30,24 +43,42 @@ Detection of visual targets is integral to survival and everyday functioning. In
 
 My Dissertation is available [online](https://repositories.lib.utexas.edu/handle/2152/115685).
 
-
-
-
-Previous Projects
-===
-
-Visual Perception of 3D Slant
-------
-Binocular stereo cues are important for discriminating 3D surface orientation, especially at near distances. We devised a single-interval task where observers discriminated the slant of a densely textured planar test surface relative to a textured planar surround reference surface. Slant discrimination performance was measured as a function of the reference slant and the level of uncorrelated white noise added to the test-plane images in the left and right eyes. We compared human performance with an approximate ideal observer and two subideal observers. 
+**2. Perception of 3D orientation and depth of a planar surface**  
 
 [**Oluk, C**., Bonnen, K., Burge, J., Cormack, L. K., & Geisler, W. S. (2022)](https://jov.arvojournals.org/article.aspx?articleid=2778771). Stereo slant discrimination of planar 3D surfaces: Frontoparallel versus planar matching. Journal of Vision, 22(5), 6-6. [GitHub Page.](https://github.com/CanOluk/Stereo-Slant-Discrimination) 
-
-As part of this project, we also derived the ideal observers, where the task is to estimate the absolute disparity when the IID texture is a different unknown random sample on each trial, and where “internal noise” is represented by adding some level of independent Gaussian pixel noise that is uncorrelated in the left and right images. 
 
 [**Oluk, C**., & Geisler, W. S. (2020).](https://jov.arvojournals.org/article.aspx?articleid=2771656) Ideal Observers for the estimation of disparity in random-pixel stereograms. Journal of Vision, 20(11), 578-578. [GitHub Page.](https://github.com/CanOluk/OptimalDisparityEstimation) 
 
 
+**3. Perception of the global motion direction (ongoing)**
 
+
+**4. Perception direction and magnitude of the vernier presented in a motion stream (ongoing)**
+
+
+
+
+2 Beyond Visual Perception
+===
+
+I am also broadly interested in human behavior and its underlying neural mechanisms. My approach can be easily extended to tasks where there are non-visual mechanisms (e.g. confidence, awareness) also leading the behavior in addition to perceptual mechanisms.
+
+
+Examples:
+------
+**Confidence in 3. Perception of the global motion direction (ongoing)**
+
+**Awareness of the 4.Perception of the vernier presented in a motion stream(ongoing)**
+
+
+3 Theory for model selection
+===
+The theoretical model space for each task is vast, and with recent advances in machine learning and computational resources it is now far easier to develop mechanistic models, which makes the practical model space large. Thus, we rely on secondary principles such as simplicity, normative criteria, and assumptions about model type to identify models that are more likely to be human like. I am interested in formalizing these model selection and development procedures, emphasizing generalizability and scalability as prerequisites. 
+
+
+Examples:
+------
+1 Efficiency as a model selection criteria (ongoing)
 
 
 
