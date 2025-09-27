@@ -12,17 +12,16 @@ I am interested in how the human visual system extracts information about the ph
 
 My approach: Scaling principled, interpretable models to build mechanistic understanding.
 ------
-<figure class="align-center" style="max-width:480px; margin: 0.75rem auto 0.25rem;">
+<figure class="align-center" style="max-width:720px; margin: 0.75rem auto 0.25rem;">
   <img src="/images/figure.png" alt="My figure" style="display:block; width:100%; height:auto;">
 </figure>
 
-<div style="border:1px solid #ccc; border-radius:8px; padding:12px 16px; background:#fafafa; margin:12px 0;">
-  
+
 **Mechanistic understanding**: To understand the principles of visual processing, I develop and compare image-computable models that transform images into perceptual decisions. 
 
 **Principled and interpretable models**: A principled model is optimal with respect to a well-defined objective (cost function) under explicit, well-defined task-imposed and experimenter-imposed constraints, making its assumptions and thus its strengths and weaknesses rigorously specified. An interpretable model has clearly specified computational components whose roles in achieving the overall objective are transparent.
 
-**Scaling**: Such models are typically available only for narrowly defined, highly constrained (simple) tasks. By scaling, I mean (i) developing this class of models for relatively complex tasks that incorporate properties of natural settings, and (ii) designing models that generalize across variations of the same task. </div>
+**Scaling**: Such models are typically available only for narrowly defined, highly constrained (simple) tasks. By scaling, I mean (i) developing this class of models for relatively complex tasks that incorporate properties of natural settings, and (ii) designing models that generalize across variations of the same task. 
 
 The advantages:
 ------
