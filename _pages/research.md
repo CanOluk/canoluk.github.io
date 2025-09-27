@@ -3,9 +3,7 @@ title: ""
 permalink: /research/
 layout: single_full
 author_profile: false
-toc: true
-toc_sticky: true
-toc_label: "On this page"
+toc: false
 ---
 
 
