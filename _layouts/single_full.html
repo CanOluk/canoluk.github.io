@@ -4,7 +4,7 @@ layout: default
 {% include base_path %}
 
 <div id="main" role="main">
-  <article class="page h-entry page--fullwidth">
+   <article class="page h-entry page--fullwidth{% if page.dark %} page--dark{% endif %}">
     <div class="page__inner-wrap">
 
       {% if page.title %}
