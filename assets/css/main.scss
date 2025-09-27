@@ -51,31 +51,23 @@
   }
 }
 
-/* === Left TOC for single_full pages (no wrapper needed) === */
-@media (min-width: 1100px) {
-  body.left-toc .page__content{
-    display: grid !important;
-    grid-template-columns: 260px minmax(0,1fr) !important; /* TOC | content */
-    grid-column-gap: 2rem !important;
-    align-items: start !important;
+/* Left TOC layout for `single_full` */
+@media (min-width:1100px){
+  .lefttoc{
+    display:grid;
+    grid-template-columns:260px minmax(0,1fr); /* TOC | content */
+    gap:2rem;
+    align-items:start;
   }
-  body.left-toc .page__content > .toc-left{
-    grid-column: 1 !important;
-    position: sticky; top: 6rem;
-    max-height: calc(100vh - 6rem);
-    overflow: auto;
-  }
-  body.left-toc .page__content > :not(.toc-left){
-    grid-column: 2 !important;
-    min-width: 0;
+  .lefttoc .toc-left{
+    position:sticky; top:6rem;              /* adjust to your masthead height */
+    max-height:calc(100vh - 6rem);
+    overflow:auto;
   }
 }
-
-/* Stack on small screens */
-@media (max-width: 1099px) {
-  body.left-toc .page__content{ display:block !important; }
-  body.left-toc .toc-left{ margin-bottom:1rem; position:static; max-height:none; }
+@media (max-width:1099px){
+  .lefttoc{ display:block; }
+  .lefttoc .toc-left{ position:static; max-height:none; margin:0 0 1rem; }
 }
-
 
 
