@@ -97,3 +97,31 @@
   .page__two-col { display: block; }
   .sidebar__right.sticky { position: static; max-height: none; }
 }
+
+
+/* --- Make TOC background match the page (no forced white) --- */
+.sidebar__right,
+.sidebar__right .toc,
+.sidebar__right .toc ul,
+.sidebar__right .toc li {
+  background: transparent;           /* inherit the site/skin background */
+}
+
+/* Keep borders readable using the theme's variables */
+.sidebar__right {
+  border-left: 1px solid $border-color;
+}
+
+/* Optional: subtle card look that still respects the skin
+   (uncomment if you prefer a panel instead of fully transparent)
+*/
+/*
+.sidebar__right {
+  background-color: $background-color;   // uses your skin's background color
+  border: 1px solid $border-color;
+  border-left-width: 1px;
+  border-radius: 6px;
+  padding: 1rem 1rem 1rem 1.25rem;
+}
+*/
+
