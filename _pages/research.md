@@ -2,12 +2,11 @@
 title: ""
 permalink: /research/
 layout: single_full
-classes:
-  - has-toc
+toc: true
+toc_sticky: true
 ---
 
-* On this page
-{:toc}
+
 
 ## 1. Visual Perception
 
