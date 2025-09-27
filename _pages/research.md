@@ -9,8 +9,7 @@ toc_label: false           # <— hide the “On this page” heading in the TOC
 tight_top: true        # <— NEW: enable tighter top spacing for this page only
 ---
 
-Visual Perception
-==
+## 1. Visual Perception
 
 I am interested in how the human visual system extracts information about the physical world to guide action. 
 
