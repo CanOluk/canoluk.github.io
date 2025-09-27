@@ -10,26 +10,33 @@
  *
 */
 
-/* left TOC for pages with `classes: left-toc` */
+/* Left TOC for pages with `classes: left-toc` (single_full) */
 @media (min-width: 1100px) {
-  .left-toc .page {
+  .left-toc .page__content {
     display: grid;
     grid-template-columns: 260px minmax(0, 1fr); /* TOC | content */
     grid-column-gap: 2rem;
+    align-items: start;
   }
   .left-toc .toc-left {
+    grid-column: 1;
     position: sticky;
-    top: 6rem;                                /* adjust for your header */
+    top: 6rem;                         /* adjust for your header height */
     max-height: calc(100vh - 6rem);
     overflow: auto;
-    align-self: start;
   }
-  .left-toc .page__content { grid-column: 2; }
+  .left-toc .content-wrap {
+    grid-column: 2;
+    min-width: 0;                      /* prevents overflow in the content column */
+  }
 }
-/* stack on small screens */
+
+/* Stack nicely on small screens */
 @media (max-width: 1099px) {
-  .left-toc .toc-left { margin-bottom: 1rem; }
+  .left-toc .page__content { display: block; }
+  .left-toc .toc-left { margin-bottom: 1rem; position: static; max-height: none; }
 }
+
 
 
 @import "vendor/breakpoint/breakpoint"; // media query mixins
