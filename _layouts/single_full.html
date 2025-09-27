@@ -42,7 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const list = document.getElementById('toc-list');
   if (!content || !list) return;
 
-  const headings = content.querySelectorAll('h2, h3'); // add h4 if needed
+  // Pick up H2/H3/H4 to be robust
+  const headings = content.querySelectorAll('h2, h3, h4');
   if (!headings.length) return;
 
   const slug = s => s.toLowerCase().trim()
@@ -50,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     .replace(/\s+/g, '-')
     .replace(/-+/g, '-');
 
-  let lastH2Li = null;
+  let lastH2 = null, lastH3 = null;
 
   headings.forEach(h => {
     if (!h.id) h.id = slug(h.textContent);
@@ -64,18 +65,19 @@ document.addEventListener('DOMContentLoaded', function () {
       li.className = 'toc-h2';
       li.appendChild(a);
       list.appendChild(li);
-      lastH2Li = li;
-    } else {
-      if (!lastH2Li) return; // guard: H3 before any H2
-      let sub = lastH2Li.querySelector('ul');
-      if (!sub) {
-        sub = document.createElement('ul');
-        sub.className = 'toc-sub';
-        lastH2Li.appendChild(sub);
-      }
-      const subLi = document.createElement('li');
-      subLi.appendChild(a);
-      sub.appendChild(subLi);
+      lastH2 = li;
+      lastH3 = null;
+    } else if (h.tagName === 'H3') {
+      const sub = lastH2?.querySelector('ul') || document.createElement('ul');
+      if (!sub.parentElement && lastH2) { sub.className = 'toc-sub'; lastH2.appendChild(sub); }
+      const li = document.createElement('li'); li.className = 'toc-h3'; li.appendChild(a);
+      (lastH2 ? sub : list).appendChild(li); // if H3 appears before any H2, fall back to root
+      lastH3 = li;
+    } else { // H4
+      const sub2 = lastH3?.querySelector('ul') || document.createElement('ul');
+      if (!sub2.parentElement && lastH3) { sub2.className = 'toc-sub'; lastH3.appendChild(sub2); }
+      const li = document.createElement('li'); li.className = 'toc-h4'; li.appendChild(a);
+      (lastH3 ? sub2 : list).appendChild(li); // fall back to root if no H3/H2 yet
     }
   });
 });
