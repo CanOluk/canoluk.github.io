@@ -50,3 +50,31 @@
     margin-right: 0 !important;
   }
 }
+
+
+/* ToC on fullwidth (single_full) pages */
+@media (min-width: 57.8125em) {
+  /* keep content from flowing under the ToC */
+  .page.page--fullwidth .page__content {
+    padding-right: 20rem;           /* or calc(#{$right-sidebar-width + 2rem}) if var exists */
+  }
+
+  /* right ToC column */
+  .page.page--fullwidth .sidebar__right {
+    float: right;
+    width: 18rem;                   /* match your padding-right minus margin */
+    margin-left: 2rem;
+  }
+
+  /* sticky behavior + masthead clearance */
+  .page.page--fullwidth .sidebar__right.sticky {
+    position: sticky;
+    top: 5.5rem;                    /* adjust if your masthead height differs */
+    max-height: calc(100vh - 6.5rem);
+    overflow: auto;
+  }
+
+  /* (nice nested list spacing) */
+  .page.page--fullwidth .toc ul { margin-left: 0.9rem; }
+}
+
