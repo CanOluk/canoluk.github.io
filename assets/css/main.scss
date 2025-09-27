@@ -51,30 +51,6 @@
   }
 }
 
-/* Right rail TOC for single_full using allejo/jekyll-toc include */
-@media (min-width: 1100px){
-  .singlefull--with-toc{
-    display: grid;
-    grid-template-columns: minmax(0,1fr) 260px; /* content | TOC */
-    gap: 2rem;
-    align-items: start;
-  }
-  .singlefull--with-toc .toc-right{
-    position: sticky; top: 6rem;
-    max-height: calc(100vh - 6rem);
-    overflow: auto;
-  }
-}
-@media (max-width: 1099px){
-  .singlefull--with-toc{ display: block; }
-  .singlefull--with-toc .toc-right{
-    position: static; max-height: none; margin: 1rem 0 0 0;
-  }
-}
-
-/* Optional: match list style */
-.toc-right ul { margin: 0; padding-left: 1rem; }
-.toc-right li { margin: 0.15rem 0; }
 
 
 
