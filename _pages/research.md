@@ -3,8 +3,11 @@ title: ""
 permalink: /research/
 layout: single_full
 author_profile: false
+classes: left-toc  # custom hook for CSS below
 ---
-
+<div class="toc-left">
+  {% include toc %}
+</div>
 
 1 Visual Perception
 ===
