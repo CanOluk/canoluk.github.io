@@ -46,41 +46,53 @@
     margin-right: 0 !important;
   }
 }
-/* Two-column layout */
+/* Force a two-column layout that's immune to older float rules */
 .page__two-col {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) clamp(320px, 28vw, 420px); /* wider TOC */
+  display: flex;              /* robust against legacy float-based CSS */
   gap: 2rem;
-  align-items: start;
+  align-items: flex-start;
 }
 
-/* Sticky sidebar */
-.sidebar__right { align-self: start; }
+/* Content stretches, allows shrinking when the sidebar claims space */
+.page__two-col .page__content {
+  flex: 1 1 auto;
+  min-width: 0;               /* critical: allows text to wrap instead of forcing sidebar tiny */
+}
+
+/* Sidebar gets a fixed, readable width (tune to taste) */
+.sidebar__right {
+  flex: 0 0 360px;            /* was collapsing; now fixed width */
+  width: 360px;               /* belt-and-suspenders */
+  box-sizing: border-box;
+  /* kill any floats or widths coming from the theme */
+  float: none !important;
+  max-width: none !important;
+}
+
+/* Sticky behavior (keep if you already have it) */
 .sidebar__right.sticky {
   position: sticky;
-  top: 84px; /* adjust to your masthead height */
+  top: 84px;                  /* adjust to your masthead height */
   max-height: calc(100vh - 84px);
   overflow: auto;
   padding-left: 1rem;
   border-left: 1px solid #eaeaea;
 }
 
-/* TOC typography */
+/* TOC block should fill the sidebar */
+.toc { width: 100%; max-width: none; }
 .toc .nav__title { font-size: 1.05rem; margin: 0 0 .5rem; }
 .toc ul { list-style: none; margin: 0; padding: 0; }
-.toc li { margin: .25rem 0; }
+.toc li { margin: .3rem 0; }
 .toc .toc-h2 > a { font-weight: 600; }
-.toc a { font-size: 1rem; line-height: 1.45; text-decoration: none; }
+.toc a { font-size: 1rem; line-height: 1.5; text-decoration: none; }
 .toc a:hover { text-decoration: underline; }
-.toc .toc-sub { margin-left: 1rem; }
 
-/* Prevent headings from hiding under a fixed header when jumped to */
+/* Anchor offset so headings don’t hide under masthead */
 .page__content h2, .page__content h3, .page__content h4 { scroll-margin-top: 96px; }
 
-
-
-/* Mobile */
+/* Mobile: stack columns and disable sticky */
 @media (max-width: 1024px) {
-  .page__two-col { grid-template-columns: 1fr; }
+  .page__two-col { display: block; }
   .sidebar__right.sticky { position: static; max-height: none; }
 }
