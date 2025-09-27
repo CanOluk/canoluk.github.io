@@ -125,3 +125,19 @@
 }
 */
 
+
+/* Tighten space between page title and the first section heading */
+.page__inner-wrap > header { margin-bottom: 0.75rem; }           /* smaller space under H1 */
+.page__title { margin-bottom: 0.5rem; }                           /* extra guard */
+
+/* If the first element inside content is a heading, reduce its top margin */
+.page__content > h2:first-child,
+.page__content > h3:first-child,
+.page__content > h4:first-child { margin-top: 0.5rem; }
+
+/* Also cover cases where something lightweight (e.g., an empty div) precedes the heading */
+.page__content > *:first-child + h2,
+.page__content > *:first-child + h3,
+.page__content > *:first-child + h4 { margin-top: 0.5rem; }
+
+
