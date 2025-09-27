@@ -1,10 +1,8 @@
 ---
 title: ""
 permalink: /research/
-layout: single
+layout: single_full
 author_profile: false
-toc: true
-toc_sticky: true  
 ---
 
 
