@@ -2,11 +2,9 @@
 title: ""
 permalink: /research/
 layout: single_full
-author_profile: false
 classes:
-  - has-toc         # lets CSS know this page can show a right-hand TOC
+  - has-toc
 ---
-
 
 * On this page
 {:toc}
