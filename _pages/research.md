@@ -7,34 +7,7 @@ classes: left-toc
 toc: false
 ---
 
-<style>
-@media (min-width:1100px){
-  /* Make the content area a 2-column grid */
-  body.left-toc .page__content{
-    display:grid !important;
-    grid-template-columns:260px minmax(0,1fr) !important; /* TOC | content */
-    grid-column-gap:2rem !important;
-    align-items:start !important;
-  }
-  /* TOC block in column 1 (left) */
-  body.left-toc .page__content > .toc-left{
-    grid-column:1 !important;
-    position:sticky; top:6rem;
-    max-height:calc(100vh - 6rem);
-    overflow:auto;
-  }
-  /* Everything else to column 2 (right) */
-  body.left-toc .page__content > :not(.toc-left){
-    grid-column:2 !important; 
-    min-width:0;
-  }
-}
-/* Stack on small screens */
-@media (max-width:1099px){
-  body.left-toc .page__content{display:block !important;}
-  body.left-toc .toc-left{margin-bottom:1rem; position:static; max-height:none;}
-}
-</style>
+
 
 <div class="toc-left">
   {% include toc %}
