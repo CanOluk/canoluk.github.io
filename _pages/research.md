@@ -67,4 +67,4 @@ The theoretical model space for each task is vast. With recent advances in machi
 
 ### Examples
 
-**Efficiency as a model selection criteria (ongoing)**
+**1. Efficiency as a model selection criteria (ongoing)**
