@@ -10,6 +10,28 @@
  *
 */
 
+/* left TOC for pages with `classes: left-toc` */
+@media (min-width: 1100px) {
+  .left-toc .page {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr); /* TOC | content */
+    grid-column-gap: 2rem;
+  }
+  .left-toc .toc-left {
+    position: sticky;
+    top: 6rem;                                /* adjust for your header */
+    max-height: calc(100vh - 6rem);
+    overflow: auto;
+    align-self: start;
+  }
+  .left-toc .page__content { grid-column: 2; }
+}
+/* stack on small screens */
+@media (max-width: 1099px) {
+  .left-toc .toc-left { margin-bottom: 1rem; }
+}
+
+
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
 @import "mixins";
@@ -51,26 +73,6 @@
   }
 }
 
-/* left TOC for pages with `classes: left-toc` */
-@media (min-width: 1100px) {
-  .left-toc .page {
-    display: grid;
-    grid-template-columns: 260px minmax(0, 1fr); /* TOC | content */
-    grid-column-gap: 2rem;
-  }
-  .left-toc .toc-left {
-    position: sticky;
-    top: 6rem;                                /* adjust for your header */
-    max-height: calc(100vh - 6rem);
-    overflow: auto;
-    align-self: start;
-  }
-  .left-toc .page__content { grid-column: 2; }
-}
-/* stack on small screens */
-@media (max-width: 1099px) {
-  .left-toc .toc-left { margin-bottom: 1rem; }
-}
 
 
 
