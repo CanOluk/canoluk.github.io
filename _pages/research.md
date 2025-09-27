@@ -6,7 +6,6 @@ toc: true
 toc_sticky: true
 hide_title: true           # <— hide the H1 on this page
 toc_label: false           # <— hide the “On this page” heading in the TOC
-dark: true                 # <— turn on page-level dark mode
 ---
 
 ## 1. Visual Perception
