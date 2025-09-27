@@ -4,7 +4,7 @@ layout: default
 {% include base_path %}
 
 <div id="main" role="main">
-  <article class="page h-entry page--fullwidth{% if page.dark %} page--dark{% endif %}">
+  <article class="page h-entry page--fullwidth">
     <div class="page__inner-wrap">
 
       {% if page.title and page.hide_title != true %}
@@ -74,8 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const li = document.createElement('li'); li.className = 'toc-h3'; li.appendChild(a);
       (lastH2 ? sub : list).appendChild(li);
       lastH3 = li;
-    } else {
-      /* H4 */
+    } else { /* H4 */
       const sub2 = lastH3?.querySelector('ul') || document.createElement('ul');
       if (!sub2.parentElement && lastH3) { sub2.className = 'toc-sub'; lastH3.appendChild(sub2); }
       const li = document.createElement('li'); li.className = 'toc-h4'; li.appendChild(a);
