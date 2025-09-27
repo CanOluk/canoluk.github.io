@@ -6,8 +6,7 @@ toc: true
 toc_sticky: true
 hide_title: false           # <— hide the H1 on this page
 toc_label: false           # <— hide the “On this page” heading in the TOC
-tight_top: true        # <— NEW: enable tighter top spacing for this page only
-big_headings: true   
+tight_top: true        # <— NEW: enable tighter top spacing for this page only 
 ---
 
 ## 1. Visual Perception
