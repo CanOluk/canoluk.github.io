@@ -10,38 +10,6 @@
  *
 */
 
-/* Force TOC to the RIGHT for pages with `classes: left-toc` */
-@media (min-width: 1100px) {
-  .left-toc .page__content {
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) 260px !important; /* content | TOC */
-    grid-column-gap: 2rem !important;
-    align-items: start;
-  }
-
-  /* TOC block to column 2 (right) */
-  .left-toc .page__content > .toc-left {
-    grid-column: 2 !important;
-    position: sticky;
-    top: 6rem;
-    max-height: calc(100vh - 6rem);
-    overflow: auto;
-  }
-
-  /* Everything else to column 1 (left) */
-  .left-toc .page__content > :not(.toc-left) {
-    grid-column: 1 !important;
-    min-width: 0;
-  }
-}
-
-/* Stack on small screens */
-@media (max-width: 1099px) {
-  .left-toc .page__content { display: block !important; }
-  .left-toc .toc-left { margin-bottom: 1rem; position: static; max-height: none; }
-}
-
-
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
 @import "mixins";
@@ -83,6 +51,31 @@
   }
 }
 
+/* === Left TOC for single_full pages (no wrapper needed) === */
+@media (min-width: 1100px) {
+  body.left-toc .page__content{
+    display: grid !important;
+    grid-template-columns: 260px minmax(0,1fr) !important; /* TOC | content */
+    grid-column-gap: 2rem !important;
+    align-items: start !important;
+  }
+  body.left-toc .page__content > .toc-left{
+    grid-column: 1 !important;
+    position: sticky; top: 6rem;
+    max-height: calc(100vh - 6rem);
+    overflow: auto;
+  }
+  body.left-toc .page__content > :not(.toc-left){
+    grid-column: 2 !important;
+    min-width: 0;
+  }
+}
+
+/* Stack on small screens */
+@media (max-width: 1099px) {
+  body.left-toc .page__content{ display:block !important; }
+  body.left-toc .toc-left{ margin-bottom:1rem; position:static; max-height:none; }
+}
 
 
 
