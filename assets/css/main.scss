@@ -51,7 +51,29 @@
   }
 }
 
+/* ToC on fullwidth pages (Minimal Mistakes) */
+@media (min-width: 57.8125em) {
+  /* keep content from flowing under the right ToC */
+  .page.page--fullwidth .page__content {
+    /* use theme var if available; replace with fixed value if not */
+    padding-right: calc(#{$right-sidebar-width + 2rem});
+  }
 
+  /* right ToC column */
+  .page.page--fullwidth .sidebar__right {
+    float: right;
+    width: $right-sidebar-width;   /* if undefined, use: 18rem */
+    margin-left: 2rem;
+  }
 
+  /* sticky behavior and masthead clearance */
+  .page.page--fullwidth .sidebar__right.sticky {
+    position: sticky;
+    top: 5.5rem;                   /* adjust to clear your masthead */
+    max-height: calc(100vh - 6.5rem);
+    overflow: auto;
+  }
 
-
+  /* nicer nested list spacing inside ToC */
+  .page.page--fullwidth .toc ul { margin-left: 0.9rem; }
+}
