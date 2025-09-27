@@ -11,16 +11,19 @@ tight_top: true        # <— NEW: enable tighter top spacing for this page only
 
 ## 1. Visual Perception
 
-I am interested in how the human visual system extracts information about the physical world to guide action. 
+I am interested in how the human visual system extracts information about the physical world to guide action.
+{: .intro-callout }  <!-- class applied to this paragraph only -->
+
 
 ### My approach: Scaling principled, interpretable models to build mechanistic understanding.
-{: data-toc-label="My approach"}
+{: data-toc-label="My approach" .approach-lg }   <!-- class applied to the H3 -->
+
 
 <figure style="max-width:720px; margin:0.75rem 0 0.25rem 0; text-align:left;">
   <img src="/images/figure.png" alt="My figure" style="display:block; width:100%; height:auto;">
 </figure>  
 
-**Mechanistic understanding**: To understand the principles of visual processing, I develop and compare image-computable models that transform images into perceptual decisions. 
+**Mechanistic understanding**: To understand the principles of visual processing, I develop and compare <span class="key-term">image-computable models</span> that transform images into perceptual decisions.
 
 **Principled and interpretable models**: A principled model is optimal with respect to a well-defined objective (cost function) under explicit, well-defined task-imposed and experimenter-imposed constraints, making its assumptions and thus its strengths and weaknesses rigorously specified. An interpretable model has clearly specified computational components whose roles in achieving the overall objective are transparent.
 
