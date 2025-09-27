@@ -1,5 +1,5 @@
 ---
-title: "Research Lines"          # was empty — set a real title
+title: ""          # was empty — set a real title
 permalink: /research/
 layout: single_full
 toc: true
@@ -8,6 +8,7 @@ hide_title: true           # <— hide the H1 on this page
 toc_label: false           # <— hide the “On this page” heading in the TOC
 dark: true                 # <— turn on page-level dark mode
 ---
+
 ## 1. Visual Perception
 
 I am interested in how the human visual system extracts information about the physical world to guide action. 
