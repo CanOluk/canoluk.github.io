@@ -10,17 +10,9 @@ layout: default
         <header><h1 class="page__title p-name">{{ page.title }}</h1></header>
       {% endif %}
 
+    
+
       <section class="page__content e-content">
-
-        {% if page.toc %}
-          <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
-            <nav class="toc" role="navigation" aria-label="Table of contents">
-              <header><h4 class="nav__title">{{ page.toc_label | default: "On this page" }}</h4></header>
-              {% include toc.html html=content sanitize=true h_min=2 h_max=3 %}
-            </nav>
-          </aside>
-        {% endif %}
-
         {{ content }}
       </section>
 
@@ -29,4 +21,3 @@ layout: default
     </div>
   </article>
 </div>
-
