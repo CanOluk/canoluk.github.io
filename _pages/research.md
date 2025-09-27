@@ -1,9 +1,9 @@
 ---
 title: ""
 permalink: /research/
-layout: single_full
+layout: single
 author_profile: false
-toc: false
+toc: true
 ---
 
 1 Visual Perception
@@ -12,7 +12,8 @@ I am interested in how the human visual system extracts information about the ph
 
 My approach: Scaling principled, interpretable models to build mechanistic understanding.
 ------
-<figure class="align-center" style="max-width:720px; margin: 0.75rem auto 0.25rem;">
+
+<figure style="max-width:720px; margin:0.75rem 0 0.25rem 0; text-align:left;">
   <img src="/images/figure.png" alt="My figure" style="display:block; width:100%; height:auto;">
 </figure>
 
@@ -52,7 +53,7 @@ My Dissertation is available [online](https://repositories.lib.utexas.edu/handle
 **3. Perception of the global motion direction (ongoing)**
 
 
-**4. Perception direction and magnitude of the vernier presented in a motion stream (ongoing)**
+**4. Perception direction and magnitude of the vernier presented in a motion stream (ongoing)**  
 
 
 
