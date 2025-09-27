@@ -7,41 +7,6 @@ toc: false
 ---
 
 
-<!-- Right-rail Table of Contents (works on GitHub Pages + Primer) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.css">
-
-<style>
-/* right sidebar TOC */
-@media (min-width: 1100px){
-  #toc {
-    float: right;
-    width: 260px;
-    margin: 0 0 1rem 2rem;      /* gap between content and TOC */
-    position: sticky; top: 6rem;
-    max-height: calc(100vh - 6rem);
-    overflow: auto;
-  }
-  /* keep long content from overlapping the TOC */
-  .page__content { overflow: visible; }
-}
-@media (max-width: 1099px){
-  #toc { float: none; width: auto; position: static; max-height: none; }
-}
-</style>
-
-<nav id="toc"></nav>
-
-<script src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js"></script>
-<script>
-  /* Build TOC from your headings inside the main content area */
-  tocbot.init({
-    tocSelector: '#toc',
-    contentSelector: '.page__content',    // the container in your layout
-    headingSelector: 'h2, h3, h4',        // which headings to include
-    collapseDepth: 6,
-    scrollSmooth: true
-  });
-</script>
 
 
 
