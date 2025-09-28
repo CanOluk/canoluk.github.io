@@ -9,15 +9,7 @@ toc_label: false           # <— hide the “On this page” heading in the TOC
 tight_top: true        # <— NEW: enable tighter top spacing for this page only 
 ---
 
-<style>
-/* affects only this page */
-.markdown-body { font-size: 1rem; color: #1f2937; }
-.markdown-body a { color: #1d4ed8; }
-.markdown-body h1 { font-size: 2.25rem; color: #0b5fff; }
-.markdown-body h2 { font-size: 1.75rem; color: #003087; }
-.markdown-body h3 { font-size: 1.40rem; }
-.markdown-body h4 { font-size: 1.125rem; }
-</style>
+
 
 
 ## 1. Visual Perception
