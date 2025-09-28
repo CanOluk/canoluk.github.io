@@ -1,38 +1,42 @@
 /* Only loads on /blog via page_css */
 
-/* Tighten the page title spacing just on /blog */
-.page__title { margin-bottom: .25rem; }
+/* Pull content closer to the masthead (page-scoped via body class) */
+body.blog-tight #main { margin-top: 0; }
+body.blog-tight .page { margin-top: 0; padding-top: 0; }
+body.blog-tight .page__inner-wrap { padding-top: .15rem; }   /* ↓ was larger */
+body.blog-tight .page__header { margin-bottom: .35rem; }
+body.blog-tight .page__title { margin-top: 0; margin-bottom: .2rem; }
 
-/* Intro text spacing (optional) */
-.blog-intro { margin: .25rem 0 .75rem; }
+/* Intro text */
+.blog-intro { margin: .2rem 0 .5rem; }
 
-/* Quote at top: smaller, dimmer, tighter margins */
+/* Quote: smaller, dimmer, very tight margins */
 .blog-quote {
-  font-size: .92rem;
+  font-size: .9rem;
   color: #94a3b8;
   border-left: 2px solid rgba(148,163,184,.25);
-  padding-left: .7rem;
-  margin: .15rem 0 .25rem; /* ↓ less space above/below */
+  padding-left: .6rem;
+  margin: .1rem 0 .25rem;
   opacity: .9;
 }
 .blog-quote__author {
   display: block;
-  margin-top: .15rem;
+  margin-top: .12rem;
   opacity: .7;
   font-weight: 400;
 }
 
-/* Single-line "Now reading" (no box), tight spacing */
+/* Single-line “Now reading” — tight spacing */
 .now-reading--inline {
   display: flex;
   align-items: baseline;
-  gap: .5rem;
-  padding: .05rem 0 .3rem; /* ↓ less vertical padding */
-  margin: 0 0 .6rem;      /* ↓ less space below */
+  gap: .45rem;
+  padding: 0;                 /* remove extra vertical padding */
+  margin: 0 0 .45rem;         /* small gap below */
   border: 0;
   background: transparent;
 }
-/* Emphasize label only */
+/* Emphasize the label only */
 .now-reading__label {
   text-transform: uppercase;
   letter-spacing: .06em;
@@ -51,14 +55,14 @@
   min-width: 0;
 }
 
-/* Post list (hidden now; keep styles for later) */
+/* Post list (styles kept for later) */
 .blog-list { list-style: none; padding: 0; margin: 0; }
-.blog-item { padding: .6rem 0; border-top: 1px solid rgba(148,163,184,.25); }
+.blog-item { padding: .55rem 0; border-top: 1px solid rgba(148,163,184,.25); }
 .blog-item:first-child { border-top: 0; }
 .blog-link { text-decoration: none; }
 .blog-title { font-size: 1.1rem; font-weight: 700; }
 .blog-meta  { margin-left: .5rem; opacity: .75; font-size: .95rem; }
-.blog-excerpt { margin-top: .35rem; opacity: .9; }
+.blog-excerpt { margin-top: .3rem; opacity: .9; }
 
 /* Small screens: keep Now reading readable */
 @media (max-width: 480px) {
