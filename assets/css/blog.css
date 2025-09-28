@@ -1,7 +1,7 @@
 /* Only loads on /blog via page_css */
 
 /* Pull content closer to the masthead (scoped to this page) */
-body.blog-tight .masthead       { margin-bottom: .2rem; }  /* reduce gap under menu */
+body.blog-tight .masthead       { margin-bottom: .1rem; }  /* reduce gap under menu */
 body.blog-tight #main           { margin-top: 0; padding-top: 0; }
 body.blog-tight .page           { margin-top: 0; padding-top: 0; }
 body.blog-tight .page__inner-wrap { padding-top: 0; }
