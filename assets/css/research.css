@@ -17,3 +17,11 @@
 }
 
 .page__content h4 { font-size: 1.125rem; color: #cbd5e1; }
+
+
+.page__content .u-underline {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
