@@ -8,3 +8,46 @@
 .blog-meta { margin-left: .5rem; opacity: .75; font-size: .95rem; }
 .blog-excerpt { margin-top: .35rem; opacity: .9; }
 
+
+/* Quote at top: compact, readable on dark backgrounds */
+.blog-quote {
+  margin: .2rem 0 1rem;
+  font-size: 1.05rem;
+  border-left: 3px solid rgba(148,163,184,.35);
+  padding-left: .9rem;
+  color: #e5e7eb;
+}
+.blog-quote__author {
+  display: block;
+  margin-top: .25rem;
+  opacity: .85;
+}
+
+/* Now reading card */
+.now-reading {
+  border: 1px solid rgba(148,163,184,.30);
+  border-radius: .5rem;
+  padding: .75rem .9rem;
+  margin: .5rem 0 1.5rem;
+  background: transparent;
+}
+.now-reading__label {
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-size: .8rem;
+  opacity: .8;
+  margin-bottom: .25rem;
+}
+.now-reading__title { font-weight: 700; font-size: 1.05rem; }
+.now-reading__meta  { opacity: .9; }
+.now-reading__note  { margin-top: .25rem; opacity: .9; }
+
+/* Post list (you can keep your existing styles) */
+.blog-list { list-style: none; padding: 0; margin: 0; }
+.blog-item { padding: .75rem 0; border-top: 1px solid rgba(148,163,184,.25); }
+.blog-item:first-child { border-top: 0; }
+.blog-link { text-decoration: none; }
+.blog-title { font-size: 1.1rem; font-weight: 700; }
+.blog-meta  { margin-left: .5rem; opacity: .75; font-size: .95rem; }
+.blog-excerpt { margin-top: .35rem; opacity: .9; }
+
