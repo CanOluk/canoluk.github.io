@@ -9,19 +9,21 @@
 .blog-excerpt { margin-top: .35rem; opacity: .9; }
 
 
-/* Quote at top: compact, readable on dark backgrounds */
+/* Quote at top: smaller + dimmer */
 .blog-quote {
-  margin: .2rem 0 1rem;
-  font-size: 0.9rem;
-  border-left: 3px solid rgba(148,163,184,.35);
-  padding-left: .9rem;
-  color: #e5e7eb;
+  font-size: 0.95rem;                 /* was ~1.05rem */
+  color: #a3b1c2;                     /* softer than near-white */
+  border-left: 2px solid rgba(148,163,184,.25);
+  padding-left: 0.8rem;
+  opacity: 0.9;                       /* slight overall dim */
 }
 .blog-quote__author {
   display: block;
   margin-top: .25rem;
-  opacity: .85;
+  opacity: 0.7;                       /* author lighter than quote */
+  font-weight: 400;
 }
+
 
 /* Now reading card */
 .now-reading {
@@ -62,22 +64,27 @@
   background: transparent;
 }
 
+
+/* Emphasize the label only */
 .now-reading__label {
   text-transform: uppercase;
   letter-spacing: .06em;
-  font-size: .8rem;
-  opacity: .8;
+  font-weight: 700;        /* bold label */
+  color: #93c5fd;          /* subtle blue accent */
   flex: 0 0 auto;
 }
 
+/* Keep book/author subdued */
 .now-reading__text {
-  font-weight: 500;
-  white-space: nowrap;           /* single line */
-  overflow: hidden;              /* clip overflow */
-  text-overflow: ellipsis;       /* show … if too long */
-  flex: 1 1 auto;                /* allow truncation */
-  min-width: 0;                  /* required for flex ellipsis */
+  font-weight: 400;        /* normal weight */
+  color: #cbd5e1;          /* neutral body tone on dark bg */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1 1 auto;
+  min-width: 0;
 }
+
 
 /* Optional: tiny size tweak on small screens */
 @media (max-width: 480px) {
