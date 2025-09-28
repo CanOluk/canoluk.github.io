@@ -1,6 +1,38 @@
 ---
 ---
 
+@charset "utf-8";
+
+/* =========================
+   1) YOUR OVERRIDES (vars) — must be BEFORE any imports
+   ========================= */
+
+/* Global text + links (edit to taste) */
+$text-color: #1f2937;
+$link-color: #1d4ed8;
+
+/* Heading/body type scale (edit to taste) */
+$type-size-1: 2.25rem;  // H1
+$type-size-2: 1.75rem;  // H2
+$type-size-3: 1.40rem;  // H3
+$type-size-4: 1.125rem; // H4 / lead
+$type-size-5: 1.00rem;  // body
+$type-size-6: 0.875rem; // small
+
+/* Optional font stack */
+$global-font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$header-font-family: $global-font-family;
+
+/* =========================
+   2) MINIMAL MISTAKES skin + core
+   (keep both; this is the documented import order)
+   ========================= */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* =========================
+   3) YOUR EXISTING IMPORTS (leave as-is since your site relies on them)
+   ========================= */
 @import "vendor/breakpoint/breakpoint";
 @import "variables";
 @import "mixins";
@@ -25,6 +57,10 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* =========================
+   4) YOUR LAYOUT TWEAKS (unchanged)
+   ========================= */
 
 /* Fullwidth page baseline (keep original behavior) */
 @media (min-width: 57.8125em) {
@@ -98,13 +134,12 @@
   .sidebar__right.sticky { position: static; max-height: none; }
 }
 
-
 /* --- Make TOC background match the page (no forced white) --- */
 .sidebar__right,
 .sidebar__right .toc,
 .sidebar__right .toc ul,
 .sidebar__right .toc li {
-  background: transparent;           /* inherit the site/skin background */
+  background: transparent;
 }
 
 /* Keep borders readable using the theme's variables */
@@ -125,24 +160,49 @@
 }
 */
 
-
 /* Slightly increase space between title and first heading */
-.page__inner-wrap > header { margin-bottom: 1.25rem; }   /* was 0.75rem */
-.page__title { margin-bottom: 1rem; }                    /* was 0.5rem */
+.page__inner-wrap > header { margin-bottom: 1.25rem; }
+.page__title { margin-bottom: 1rem; }
 
 /* If the first element is a heading, give it a touch more top space */
 .page__content > h2:first-child,
 .page__content > h3:first-child,
-.page__content > h4:first-child { margin-top: 0.9rem; }  /* was 0.5rem */
+.page__content > h4:first-child { margin-top: 0.9rem; }
 
 .page__content > *:first-child + h2,
 .page__content > *:first-child + h3,
 .page__content > *:first-child + h4 { margin-top: 0.9rem; }
 
-
-/* === Tighten gap between masthead (top bar) and page title — only on pages with `tight_top: true` === */
+/* Tight top spacing toggle */
 body.has-tight-top #main            { margin-top: 0; padding-top: 0; }
 body.has-tight-top .page            { margin-top: 0; padding-top: 0; }
-body.has-tight-top .page__inner-wrap{ padding-top: 0.5rem; }  /* tweak this number to taste */
-body.has-tight-top .page__title     { margin-top: 0; }        /* keep H1 snug to the top */
+body.has-tight-top .page__inner-wrap{ padding-top: 0.5rem; }
+body.has-tight-top .page__title     { margin-top: 0; }
 
+/* =========================
+   5) FINAL, EXPLICIT OVERRIDES — keep LAST so they always win
+   ========================= */
+
+/* Global text color */
+body,
+.page__content,
+.page__meta,
+.archive__item-excerpt { color: $text-color; }
+
+/* Heading colors */
+h1, .page__title { color: #0b5fff; }   /* edit color */
+h2 { color: #003087; }                 /* edit color */
+h3, h4, h5, h6 { color: inherit; }
+
+/* Heading sizes (guaranteed) */
+.page__content h1, h1.page__title { font-size: $type-size-1; }
+.page__content h2                 { font-size: $type-size-2; }
+.page__content h3                 { font-size: $type-size-3; }
+.page__content h4                 { font-size: $type-size-4; }
+
+/* Body size (optional) */
+.page__content { font-size: $type-size-5; }
+
+/* Link color (ensures consistency across components) */
+a { color: $link-color; }
+a:hover, a:focus { text-decoration: underline; }
