@@ -14,7 +14,7 @@ reading:
   title: "The Magic Mountain"
   author: "Thomas Mann"
 show_posts: false      # ← flip to true later to display post
-classes: blog-tight   # ← add this
+classes: blog-tight
 ---
 
 <!-- Top quote (compact) -->
