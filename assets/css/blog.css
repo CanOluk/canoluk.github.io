@@ -1,11 +1,12 @@
 /* Only loads on /blog via page_css */
 
-/* Pull content closer to the masthead (page-scoped via body class) */
-body.blog-tight #main { margin-top: 0; }
-body.blog-tight .page { margin-top: 0; padding-top: 0; }
-body.blog-tight .page__inner-wrap { padding-top: .15rem; }   /* ↓ was larger */
-body.blog-tight .page__header { margin-bottom: .35rem; }
-body.blog-tight .page__title { margin-top: 0; margin-bottom: .2rem; }
+/* Pull content closer to the masthead (scoped to this page) */
+body.blog-tight .masthead       { margin-bottom: .2rem; }  /* reduce gap under menu */
+body.blog-tight #main           { margin-top: 0; padding-top: 0; }
+body.blog-tight .page           { margin-top: 0; padding-top: 0; }
+body.blog-tight .page__inner-wrap { padding-top: 0; }
+body.blog-tight .page__header   { margin-bottom: .25rem; }
+body.blog-tight .page__title    { margin-top: 0; margin-bottom: .2rem; line-height: 1.15; }
 
 /* Intro text */
 .blog-intro { margin: .2rem 0 .5rem; }
