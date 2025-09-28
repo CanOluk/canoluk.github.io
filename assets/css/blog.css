@@ -1,7 +1,7 @@
 /* Only loads on /blog via page_css */
 
 /* Tighten the page title spacing just on /blog */
-.page__title { margin-bottom: .5rem; }
+.page__title { margin-bottom: .25rem; }
 
 /* Intro text spacing (optional) */
 .blog-intro { margin: .25rem 0 .75rem; }
@@ -12,7 +12,7 @@
   color: #94a3b8;
   border-left: 2px solid rgba(148,163,184,.25);
   padding-left: .7rem;
-  margin: .25rem 0 .5rem; /* ↓ less space above/below */
+  margin: .15rem 0 .25rem; /* ↓ less space above/below */
   opacity: .9;
 }
 .blog-quote__author {
@@ -27,7 +27,7 @@
   display: flex;
   align-items: baseline;
   gap: .5rem;
-  padding: .1rem 0 .6rem; /* ↓ less vertical padding */
+  padding: .05rem 0 .3rem; /* ↓ less vertical padding */
   margin: 0 0 .6rem;      /* ↓ less space below */
   border: 0;
   background: transparent;
