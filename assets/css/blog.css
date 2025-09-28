@@ -1,83 +1,49 @@
-/* only loads on /blog via page_css */
+/* Only loads on /blog via page_css */
 
+/* Tighten the page title spacing just on /blog */
+.page__title { margin-bottom: .5rem; }
 
-.blog-list { list-style: none; padding: 0; margin: 0; }
-.blog-item { padding: .75rem 0; border-top: 1px solid rgba(148,163,184,.25); }
-.blog-item:first-child { border-top: 0; }
-.blog-title { font-size: 1.1rem; font-weight: 700; }
-.blog-meta { margin-left: .5rem; opacity: .75; font-size: .95rem; }
-.blog-excerpt { margin-top: .35rem; opacity: .9; }
+/* Intro text spacing (optional) */
+.blog-intro { margin: .25rem 0 .75rem; }
 
-
-/* Quote at top: smaller + dimmer */
+/* Quote at top: smaller, dimmer, tighter margins */
 .blog-quote {
-  font-size: 0.95rem;                 /* was ~1.05rem */
-  color: #a3b1c2;                     /* softer than near-white */
+  font-size: .92rem;
+  color: #94a3b8;
   border-left: 2px solid rgba(148,163,184,.25);
-  padding-left: 0.8rem;
-  opacity: 0.9;                       /* slight overall dim */
+  padding-left: .7rem;
+  margin: .25rem 0 .5rem; /* ↓ less space above/below */
+  opacity: .9;
 }
 .blog-quote__author {
   display: block;
-  margin-top: .25rem;
-  opacity: 0.7;                       /* author lighter than quote */
+  margin-top: .15rem;
+  opacity: .7;
   font-weight: 400;
 }
 
-
-/* Now reading card */
-.now-reading {
-  border: 1px solid rgba(148,163,184,.30);
-  border-radius: .5rem;
-  padding: .75rem .9rem;
-  margin: .5rem 0 1.5rem;
-  background: transparent;
-}
-.now-reading__label {
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  font-size: .8rem;
-  opacity: .8;
-  margin-bottom: .25rem;
-}
-.now-reading__title { font-weight: 700; font-size: 0.9rem; }
-.now-reading__meta  { opacity: .9; }
-.now-reading__note  { margin-top: .25rem; opacity: .9; }
-
-/* Post list (you can keep your existing styles) */
-.blog-list { list-style: none; padding: 0; margin: 0; }
-.blog-item { padding: .75rem 0; border-top: 1px solid rgba(148,163,184,.25); }
-.blog-item:first-child { border-top: 0; }
-.blog-link { text-decoration: none; }
-.blog-title { font-size: 1.1rem; font-weight: 700; }
-.blog-meta  { margin-left: .5rem; opacity: .75; font-size: .95rem; }
-.blog-excerpt { margin-top: .35rem; opacity: .9; }
-
-
-/* Single-line Now reading */
+/* Single-line "Now reading" (no box), tight spacing */
 .now-reading--inline {
   display: flex;
   align-items: baseline;
   gap: .5rem;
-  padding: .25rem 0 1rem;
-  border: 0;                     /* no box, just text */
+  padding: .1rem 0 .6rem; /* ↓ less vertical padding */
+  margin: 0 0 .6rem;      /* ↓ less space below */
+  border: 0;
   background: transparent;
 }
-
-
-/* Emphasize the label only */
+/* Emphasize label only */
 .now-reading__label {
   text-transform: uppercase;
   letter-spacing: .06em;
-  font-weight: 700;        /* bold label */
-  color: #93c5fd;          /* subtle blue accent */
+  font-weight: 700;
+  color: #93c5fd;
   flex: 0 0 auto;
 }
-
-/* Keep book/author subdued */
+/* Book/author subdued + single-line ellipsis */
 .now-reading__text {
-  font-weight: 400;        /* normal weight */
-  color: #cbd5e1;          /* neutral body tone on dark bg */
+  font-weight: 400;
+  color: #cbd5e1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -85,9 +51,16 @@
   min-width: 0;
 }
 
+/* Post list (hidden now; keep styles for later) */
+.blog-list { list-style: none; padding: 0; margin: 0; }
+.blog-item { padding: .6rem 0; border-top: 1px solid rgba(148,163,184,.25); }
+.blog-item:first-child { border-top: 0; }
+.blog-link { text-decoration: none; }
+.blog-title { font-size: 1.1rem; font-weight: 700; }
+.blog-meta  { margin-left: .5rem; opacity: .75; font-size: .95rem; }
+.blog-excerpt { margin-top: .35rem; opacity: .9; }
 
-/* Optional: tiny size tweak on small screens */
+/* Small screens: keep Now reading readable */
 @media (max-width: 480px) {
   .now-reading__text { font-size: .95rem; }
 }
-
