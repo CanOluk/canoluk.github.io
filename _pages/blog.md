@@ -28,7 +28,7 @@ reading:
   {% if page.reading.note %}<div class="now-reading__note">{{ page.reading.note }}</div>{% endif %}
 </div>
 
-<p class="blog-intro">Short updates and longer thoughts. Newest first.</p>
+<p class="blog-intro">Mixture of everything.</p>
 
 <ul class="blog-list">
 {% for post in site.posts %}
