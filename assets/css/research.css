@@ -22,7 +22,7 @@
 
 /* Big, centered, blue-ish line under “My approach” */
 .page__content .approach-lead {
-  font-size: 1.9rem;      /* tweak as you like */
+  font-size: 1.5rem;      /* tweak as you like */
   line-height: 1.35;
   text-align: center;
   color: #93c5fd;         /* light blue that pops on dark bg */
