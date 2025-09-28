@@ -85,3 +85,9 @@
 }
 
 
+/* Only that single bold line */
+.page__content .example-title {
+  font-size: 1.2em;   /* try 1.15–1.25 as you like */
+  line-height: 1.35;
+}
+
