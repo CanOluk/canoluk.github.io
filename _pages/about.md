@@ -24,7 +24,7 @@ I am a postdoctoral researcher in the Laboratory of Psychophysics ([LPSY](https:
 <div class="latest-news" markdown="1">
 
 - **August, 2025** — Presented a poster in ECVP: [Evaluating ideal observers for large target identification tasks
-under additive white noise]((http://canoluk.github.io/files/ECVP_2025.pdf))
+under additive white noise](http://canoluk.github.io/files/ECVP_2025.pdf)
 - **August, 2025** — Presented a poster in Systems Vision Science Symposium: Maximum likelihood estimates in visual categorization tasks are biased when pairwise discriminabilities are imbalanced. 
 
 </div>
