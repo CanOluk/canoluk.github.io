@@ -1,12 +1,19 @@
 /* Page title (the big H1 at the top) */
 .page__title {
-  font-size: 3rem;        /* make it bigger */
+  font-size: 2.25rem;        /* make it bigger */
   line-height: 1.15;
   color: #f8fafc;         /* near-white for contrast on dark bg */
 }
 
 /* Content headings only (no paragraph color changes) */
 .page__content h1 { font-size: 2.25rem; color: #f8fafc; } /* if you ever use H1 in body */
-.page__content h2 { font-size: 1.75rem; color: #e2e8f0; }
-.page__content h3 { font-size: 1.40rem; color: #cbd5e1; }
+.page__content h2 { font-size: 1.60rem; color: #e2e8f0; }
+.page__content h3 {
+  font-size: 1.30rem;
+  color: #cbd5e1;
+  text-decoration: underline;                /* add underline */
+  text-decoration-thickness: 2px;            /* make it thicker */
+  text-underline-offset: 0.2em;              /* move it a bit away from text */
+}
+
 .page__content h4 { font-size: 1.125rem; color: #cbd5e1; }
