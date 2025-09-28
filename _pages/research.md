@@ -16,12 +16,8 @@ page_css:
 
 I am interested in how the human visual system extracts information about the physical world to guide action.
 
-
-
-### My approach
-Scaling principled, interpretable models to build mechanistic understanding.
+My approach: Scaling principled, interpretable models to develop mechanistic understanding.
 {: .approach-lead }
-
 
 <figure style="max-width:720px; margin:0.75rem 0 0.25rem 0; text-align:left;">
   <img src="/images/figure.png" alt="My figure" style="display:block; width:100%; height:auto;">
@@ -46,39 +42,68 @@ Scaling principled, interpretable models to build mechanistic understanding.
   4. Applicable to a broad range of problems (e.g. 3D perception, motion perception, target identification)
 </details>
 
-### Examples
+<!-- Collapsible “Examples” -->
+<details class="drop" name="research-accordion" markdown="1">
+  <summary class="h3-toggle">Examples</summary>
 
-**1. Target Identification under high levels of uncertainty**
-{: .example-title}
-[**Oluk, C**., & Geisler, W. S. (2025)](https://jov.arvojournals.org/article.aspx?articleid=2802525). Target identification under high levels of amplitude, size, orientation and background uncertainty. *Journal of Vision*, 25(2), 3. [GitHub Page.](https://github.com/CanOluk/Target_Identification)
+  <!-- keep an H3 for TOC/anchors but hide it visually -->
+  <h3 id="examples" class="sr-only">Examples</h3>
 
-[**Oluk, C**., & Geisler, W. S. (2023)](https://jov.arvojournals.org/article.aspx?articleid=2792955). Effects of Target-Amplitude and Background-Contrast Uncertainty Predicted by a Normalized Template-Matching Observer. *Journal of Vision*, 23(12), 8. [GitHub Page.](https://github.com/CanOluk/Amplitude_Contrast_Uncertainty)
+  **1. Target Identification under high levels of uncertainty**
+  {: .example-title}
+  [**Oluk, C**., & Geisler, W. S. (2025)](https://jov.arvojournals.org/article.aspx?articleid=2802525). Target identification under high levels of amplitude, size, orientation and background uncertainty. *Journal of Vision*, 25(2), 3. [GitHub Page.](https://github.com/CanOluk/Target_Identification)
 
-My dissertation is available [online](https://repositories.lib.utexas.edu/handle/2152/115685).
+  [**Oluk, C**., & Geisler, W. S. (2023)](https://jov.arvojournals.org/article.aspx?articleid=2792955). Effects of Target-Amplitude and Background-Contrast Uncertainty Predicted by a Normalized Template-Matching Observer. *Journal of Vision*, 23(12), 8. [GitHub Page.](https://github.com/CanOluk/Amplitude_Contrast_Uncertainty)
 
-**2. Perception of 3D orientation and depth of a planar surface**  
-[**Oluk, C**., Bonnen, K., Burge, J., Cormack, L. K., & Geisler, W. S. (2022)](https://jov.arvojournals.org/article.aspx?articleid=2778771). Stereo slant discrimination of planar 3D surfaces: Frontoparallel versus planar matching. *Journal of Vision*, 22(5), 6-6. [GitHub Page.](https://github.com/CanOluk/Stereo-Slant-Discrimination)  
+  My dissertation is available [online](https://repositories.lib.utexas.edu/handle/2152/115685).
 
-[**Oluk, C**., & Geisler, W. S. (2020)](https://jov.arvojournals.org/article.aspx?articleid=2771656). Ideal observers for the estimation of disparity in random-pixel stereograms. *Journal of Vision*, 20(11), 578-578. [GitHub Page.](https://github.com/CanOluk/OptimalDisparityEstimation)
+  **2. Perception of 3D orientation and depth of a planar surface**
+  {: .example-title}
+  [**Oluk, C**., Bonnen, K., Burge, J., Cormack, L. K., & Geisler, W. S. (2022)](https://jov.arvojournals.org/article.aspx?articleid=2778771). Stereo slant discrimination of planar 3D surfaces: Frontoparallel versus planar matching. *Journal of Vision*, 22(5), 6-6. [GitHub Page.](https://github.com/CanOluk/Stereo-Slant-Discrimination)  
 
-**3. Perception of the global motion direction (ongoing)**
+  [**Oluk, C**., & Geisler, W. S. (2020)](https://jov.arvojournals.org/article.aspx?articleid=2771656). Ideal observers for the estimation of disparity in random-pixel stereograms. *Journal of Vision*, 20(11), 578-578. [GitHub Page.](https://github.com/CanOluk/OptimalDisparityEstimation)
 
-**4. Perception direction and magnitude of the vernier presented in a motion stream (ongoing)**
+  **3. Perception of the global motion direction (ongoing)**
+  {: .example-title}
+
+  **4. Perception direction and magnitude of the vernier presented in a motion stream (ongoing)**
+  {: .example-title}
+</details>
+
+
+
 
 ## 2. Beyond Visual Perception
 
 I am also broadly interested in human behavior and its underlying neural mechanisms. My approach can be easily extended to tasks where there are non-visual mechanisms (e.g. confidence, awareness) also leading the behavior in addition to perceptual mechanisms.
 
-### Examples
+<!-- Collapsible “Examples” -->
+<details class="drop" name="research-accordion" markdown="1">
+  <summary class="h3-toggle">Examples</summary>
 
-**Confidence in perception of the global motion direction (ongoing)**
+  <!-- keep a real H3 for TOC/anchors but hide it visually -->
+  <h3 id="examples-2" class="sr-only">Examples</h3>
 
-**Awareness of the perception of the vernier presented in a motion stream (ongoing)**
+  **1. Confidence in perception of the global motion direction (ongoing)**
+  {: .example-title}
+
+  **2. Awareness of the perception of the vernier presented in a motion stream (ongoing)**
+  {: .example-title}
+</details>
+
 
 ## 3. Theory for model selection
 
 The theoretical model space for each task is vast. With recent advances in machine learning and computational resources it is now far easier to develop mechanistic models, which makes the practical model space large. Thus, we rely on secondary principles such as simplicity, normative criteria, and assumptions about model type to identify models that are more likely to be human like. I am interested in formalizing these model selection and development procedures, emphasizing generalizability and scalability as prerequisites.
 
-### Examples
+<!-- Collapsible “Examples” -->
+<details class="drop" name="research-accordion" markdown="1">
+  <summary class="h3-toggle">Examples</summary>
 
-**1. Efficiency as a model selection criteria (ongoing)**
+  <!-- keep an H3 for TOC/anchors but hide it visually -->
+  <h3 id="examples-3" class="sr-only">Examples</h3>
+
+  **1. Efficiency as a model selection criteria (ongoing)**
+  {: .example-title}
+</details>
+
