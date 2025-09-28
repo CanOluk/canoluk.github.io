@@ -7,9 +7,12 @@ main:
   #  url: /talks/    
 
   - title: "About Me"
-    url: /about_me/    
+    url: /about_me/ 
+
+  - title: "Blog"
+    url: /blog/
     
-  # - title: "Portfolio"
+# - title: "Portfolio"
   #  url: /portfolio/
         
   # - title: "Blog Posts"
@@ -20,3 +23,5 @@ main:
     
   # - title: "Guide"
   #  url: /markdown/
+
+
