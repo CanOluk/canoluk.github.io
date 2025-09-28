@@ -20,15 +20,14 @@ reading:
 > <span class="blog-quote__author">— {{ page.quote.author }}</span>
 {: .blog-quote}
 
-<!-- Now reading card -->
-<div class="now-reading" markdown="1">
-  <div class="now-reading__label">Now reading</div>
-  <div class="now-reading__title">{{ page.reading.title }}</div>
-  <div class="now-reading__meta">{{ page.reading.author }}</div>
-  {% if page.reading.note %}<div class="now-reading__note">{{ page.reading.note }}</div>{% endif %}
+<!-- Now reading (single line) -->
+<div class="now-reading now-reading--inline">
+  <span class="now-reading__label">Now reading:</span>
+  <span class="now-reading__text">
+    {{ page.reading.title }} — {{ page.reading.author }}{% if page.reading.note %} • {{ page.reading.note }}{% endif %}
+  </span>
 </div>
 
-<p class="blog-intro">Mixture of everything.</p>
 
 <ul class="blog-list">
 {% for post in site.posts %}
