@@ -51,11 +51,12 @@ My approach: Scaling principled, interpretable models to develop mechanistic und
 
   **1. Target Identification under high levels of uncertainty**
   {: .example-title}
+ **Oluk, C**. and Geisler, W. S. (2025). Evaluating ideal observers for large target identification tasks
+under additive white noise. *77th European Conference on Visual Perception*, Mainz, Germany. [Poster](http://canoluk.github.io/files/ECVP_2025.pdf)
+
   [**Oluk, C**., & Geisler, W. S. (2025)](https://jov.arvojournals.org/article.aspx?articleid=2802525). Target identification under high levels of amplitude, size, orientation and background uncertainty. *Journal of Vision*, 25(2), 3. [GitHub Page.](https://github.com/CanOluk/Target_Identification)
 
   [**Oluk, C**., & Geisler, W. S. (2023)](https://jov.arvojournals.org/article.aspx?articleid=2792955). Effects of Target-Amplitude and Background-Contrast Uncertainty Predicted by a Normalized Template-Matching Observer. *Journal of Vision*, 23(12), 8. [GitHub Page.](https://github.com/CanOluk/Amplitude_Contrast_Uncertainty)
-
-  My dissertation is available [online](https://repositories.lib.utexas.edu/handle/2152/115685).
 
   **2. Perception of 3D orientation and depth of a planar surface**
   {: .example-title}
@@ -65,9 +66,11 @@ My approach: Scaling principled, interpretable models to develop mechanistic und
 
   **3. Perception of the global motion direction (ongoing)**
   {: .example-title}
+  **Oluk, C.**, Szinte, M., Masson, G. S., Mamassian, P. (2024). Confidence responses in global motion discrimination task     are well predicted by visual reliability. *Vision Science Society Meeting*, Florida, US. [Poster](http://canoluk.github.io/files/VSS_2024.pdf)
 
   **4. Perception direction and magnitude of the vernier presented in a motion stream (ongoing)**
   {: .example-title}
+  Holdsworth, M., Menétrey, M. Q., **Oluk, C.**, and Herzog, M. H. (2025). A continuous adjustment task allows for better      understanding of visual feature integration in a Sequential Metacontrast Paradigm. *77th European Conference on Visual       Perception*, Mainz, Germany.
 </details>
 
 
@@ -86,9 +89,11 @@ I am also broadly interested in human behavior and its underlying neural mechani
 
   **1. Confidence in perception of the global motion direction (ongoing)**
   {: .example-title}
+  **Oluk, C.**, Szinte, M., Masson, G. S., Mamassian, P. (2024). Confidence responses in global motion discrimination task     are well predicted by visual reliability. *Vision Science Society Meeting*, Florida, US. [Poster](http://canoluk.github.io/files/VSS_2024.pdf)
 
   **2. Awareness of the perception of the vernier presented in a motion stream (ongoing)**
   {: .example-title}
+  Holdsworth, M., Menétrey, M. Q., **Oluk, C.**, and Herzog, M. H. (2025). A continuous adjustment task allows for better      understanding of visual feature integration in a Sequential Metacontrast Paradigm. *77th European Conference on Visual       Perception*, Mainz, Germany.
 </details>
 
 
