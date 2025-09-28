@@ -33,16 +33,23 @@ Scaling principled, interpretable models to build mechanistic understanding.
 
 **Scaling**: Such models are typically available only for narrowly defined, highly constrained (simple) tasks. By scaling, I mean (i) developing this class of models for relatively complex tasks that incorporate properties of natural settings, and (ii) designing models that generalize across variations of the same task. 
 
-### The advantages
+<!-- Collapsible “The advantages” section -->
+<details class="drop" name="research-accordion" markdown="1">
+  <summary class="h3-toggle">The advantages</summary>
 
-1. Posing novel questions about mechanisms of visal processing (e.g. Oluk et al., 2023)
-2. Allow us to explore the model space rigorously by thinking about the constraints and biologically plausible approbations (e.g. Oluk & Geisler, 2024)
-3. Provides us a benchmark performance where we can compare the human and other models performance, especially useful for gaining insight about the performance of machine learning models that can handle much complex tasks where benchmarks are unavailable (e.g. Oluk & Geisler, 2025)
-4. Applicable to broad range of problems (e.g. 3D perception, motion perception, target identification)
+  <!-- Keep an H3 for TOC/anchors but hide it visually -->
+  <h3 id="advantages" class="sr-only">The advantages</h3>
+
+  1. Posing novel questions about mechanisms of visual processing (e.g. Oluk et al., 2023)
+  2. Allows us to explore the model space rigorously by thinking about the constraints and biologically plausible approximations (e.g. Oluk & Geisler, 2024)
+  3. Provides a benchmark to compare human and model performance, helpful for ML models where benchmarks are unavailable (e.g. Oluk & Geisler, 2025)
+  4. Applicable to a broad range of problems (e.g. 3D perception, motion perception, target identification)
+</details>
 
 ### Examples
 
-**1. Target Identification under high levels of uncertainty**  
+**1. Target Identification under high levels of uncertainty**
+{: .example-title}
 [**Oluk, C**., & Geisler, W. S. (2025)](https://jov.arvojournals.org/article.aspx?articleid=2802525). Target identification under high levels of amplitude, size, orientation and background uncertainty. *Journal of Vision*, 25(2), 3. [GitHub Page.](https://github.com/CanOluk/Target_Identification)
 
 [**Oluk, C**., & Geisler, W. S. (2023)](https://jov.arvojournals.org/article.aspx?articleid=2792955). Effects of Target-Amplitude and Background-Contrast Uncertainty Predicted by a Normalized Template-Matching Observer. *Journal of Vision*, 23(12), 8. [GitHub Page.](https://github.com/CanOluk/Amplitude_Contrast_Uncertainty)
