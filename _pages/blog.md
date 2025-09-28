@@ -3,6 +3,8 @@ title: "Blog"
 permalink: /blog/
 layout: single_full
 toc: false
+page_css:
+  - /assets/css/blog.css
 
 # Edit these anytime
 quote:
