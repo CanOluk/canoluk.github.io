@@ -1,0 +1,21 @@
+---
+---
+
+@import "{{ site.theme }}";  /* keep your current theme; this pulls its CSS */
+
+/* Your overrides go AFTER the import */
+
+/* Global body text size & color */
+body { font-size: 1rem; color: #1f2937; }
+
+/* Headings: sizes + colors (edit to taste) */
+h1 { font-size: 2.25rem; color: #0b5fff; }
+h2 { font-size: 1.75rem; color: #003087; }
+h3 { font-size: 1.40rem; }
+h4 { font-size: 1.125rem; }
+h5 { font-size: 1.00rem; }
+h6 { font-size: 0.875rem; }
+
+/* Optional: links */
+a  { color: #1d4ed8; }
+a:hover, a:focus { text-decoration: underline; }
