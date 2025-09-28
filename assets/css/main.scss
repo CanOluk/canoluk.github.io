@@ -1,6 +1,32 @@
 ---
 ---
 
+
+@charset "utf-8";
+
+/* 1) Override theme variables BEFORE imports */
+
+/* Fonts (optional): */
+$global-font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$header-font-family: $global-font-family;
+
+
+/* Type scale (headings & text sizes): */
+$type-size-1: 2.25rem;  // ~ H1
+$type-size-2: 1.75rem;  // ~ H2
+$type-size-3: 1.4rem;   // ~ H3
+$type-size-4: 1.125rem; // lead/large text
+$type-size-5: 1rem;     // body
+$type-size-6: 0.875rem; // small
+
+/* 2) Import the selected skin first, then the theme */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* 3) (Optional) Fine-tune specific elements AFTER imports */
+h1, .page__title { color: #0b5fff; }
+h2 { color: #003087; }
+
 @import "vendor/breakpoint/breakpoint";
 @import "variables";
 @import "mixins";
