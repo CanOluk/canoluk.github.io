@@ -1,0 +1,9 @@
+/* only loads on /blog via page_css */
+.blog-intro { margin: .25rem 0 1rem; opacity: .9; }
+.blog-list { list-style: none; padding: 0; margin: 0; }
+.blog-item { padding: .75rem 0; border-top: 1px solid rgba(148,163,184,.25); }
+.blog-item:first-child { border-top: 0; }
+.blog-link { text-decoration: none; }
+.blog-title { font-size: 1.1rem; font-weight: 700; }
+.blog-meta { display: inline-block; margin-left: .5rem; opacity: .7; font-size: .95rem; }
+.blog-excerpt { margin-top: .35rem; opacity: .9; }
