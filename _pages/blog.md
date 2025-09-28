@@ -3,7 +3,28 @@ title: "Blog"
 permalink: /blog/
 layout: single_full
 toc: false
+
+# Edit these anytime
+quote:
+  text: "But it can also happen (even in a society that applies itself to being the fairest and best designed for assuring the harmonious development of all its members: this may be stated as a certainty without any risk of being mistaken) that isolated, maladjusted, lonely individuals, morbidly attached to their childhood, withdrawn into themselves and cultivating a more or less conscious taste for a certain form of defeat, by giving in to an apparently useless obsession, succeed in digging up and laying bare a fragment of reality that is still unknown."
+  author: "Age of Suspicion, Nathalie Sarraute"
+reading:
+  title: "The Magic Mountain"
+  author: "Thomas Mann"
 ---
+
+<!-- Top quote (compact) -->
+> “{{ page.quote.text }}”
+> <span class="blog-quote__author">— {{ page.quote.author }}</span>
+{: .blog-quote}
+
+<!-- Now reading card -->
+<div class="now-reading" markdown="1">
+  <div class="now-reading__label">Now reading</div>
+  <div class="now-reading__title">{{ page.reading.title }}</div>
+  <div class="now-reading__meta">{{ page.reading.author }}</div>
+  {% if page.reading.note %}<div class="now-reading__note">{{ page.reading.note }}</div>{% endif %}
+</div>
 
 <p class="blog-intro">Short updates and longer thoughts. Newest first.</p>
 
