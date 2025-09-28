@@ -18,9 +18,9 @@ I am interested in how the human visual system extracts information about the ph
 
 
 
-### <span class="u-underline">My approach</span>: Scaling principled, interpretable models to build mechanistic understanding.
-{: data-toc-label="My approach" }
-
+### My approach
+Scaling principled, interpretable models to build mechanistic understanding.
+{: .approach-lead }
 
 
 <figure style="max-width:720px; margin:0.75rem 0 0.25rem 0; text-align:left;">
