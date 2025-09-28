@@ -1,34 +1,7 @@
 ---
 ---
 
-@charset "utf-8";
 
-/* =========================
-   1) YOUR OVERRIDES (vars) — must be BEFORE any imports
-   ========================= */
-
-/* Global text + links (edit to taste) */
-$text-color: #1f2937;
-$link-color: #1d4ed8;
-
-/* Heading/body type scale (edit to taste) */
-$type-size-1: 2.25rem;  // H1
-$type-size-2: 1.75rem;  // H2
-$type-size-3: 1.40rem;  // H3
-$type-size-4: 1.125rem; // H4 / lead
-$type-size-5: 1.00rem;  // body
-$type-size-6: 0.875rem; // small
-
-/* Optional font stack */
-$global-font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-$header-font-family: $global-font-family;
-
-/* =========================
-   2) MINIMAL MISTAKES skin + core
-   (keep both; this is the documented import order)
-   ========================= */
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
-@import "minimal-mistakes";
 
 /* =========================
    3) YOUR EXISTING IMPORTS (leave as-is since your site relies on them)
@@ -179,30 +152,3 @@ body.has-tight-top .page            { margin-top: 0; padding-top: 0; }
 body.has-tight-top .page__inner-wrap{ padding-top: 0.5rem; }
 body.has-tight-top .page__title     { margin-top: 0; }
 
-/* =========================
-   5) FINAL, EXPLICIT OVERRIDES — keep LAST so they always win
-   ========================= */
-
-/* Global text color */
-body,
-.page__content,
-.page__meta,
-.archive__item-excerpt { color: $text-color; }
-
-/* Heading colors */
-h1, .page__title { color: #0b5fff; }   /* edit color */
-h2 { color: #003087; }                 /* edit color */
-h3, h4, h5, h6 { color: inherit; }
-
-/* Heading sizes (guaranteed) */
-.page__content h1, h1.page__title { font-size: $type-size-1; }
-.page__content h2                 { font-size: $type-size-2; }
-.page__content h3                 { font-size: $type-size-3; }
-.page__content h4                 { font-size: $type-size-4; }
-
-/* Body size (optional) */
-.page__content { font-size: $type-size-5; }
-
-/* Link color (ensures consistency across components) */
-a { color: $link-color; }
-a:hover, a:focus { text-decoration: underline; }
