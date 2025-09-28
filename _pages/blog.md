@@ -13,6 +13,7 @@ quote:
 reading:
   title: "The Magic Mountain"
   author: "Thomas Mann"
+  show_posts: false      # ← flip to true later to display posts
 ---
 
 <!-- Top quote (compact) -->
@@ -29,6 +30,7 @@ reading:
 </div>
 
 
+{% if page.show_posts %}
 <ul class="blog-list">
 {% for post in site.posts %}
   <li class="blog-item">
@@ -42,3 +44,4 @@ reading:
   </li>
 {% endfor %}
 </ul>
+{% endif %}
