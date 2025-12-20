@@ -13,7 +13,7 @@ I am a postdoctoral researcher in the Laboratory of Psychophysics ([LPSY](https:
 
 
 
-<span style="font-size: 93%;"> My research focuses on building image-computable models to explain how the human visual system extracts information from the physical world to guide action across broad range of tasks. In particular, I extend principled, interpretable models (e.g., Bayesian ideal observers) to relatively complex tasks and test their generalisability across task variations. Beyond visual perception, I am interested in theory of model selection and broadly interested in human behaviour and its underlying neural mechanisms (e.g., confidence and consciousness).</span>
+<span style="font-size: 93%;"> My research focuses on building robust and scalable computational models of human visual perception. I develop principled, interpretable models (e.g., Bayesian Ideal Observers) and test predictions against behavioral data from tasks incorporating high input complexity (challenges inherent in natural signals) and output complexity (measuring the multivariate nature of percepts). I am also interested in the theory of scalability and robustness of computational principles from the lab to real-world settings and  broadly interested in human behavior and its underlying neural mechanisms (e.g., confidence and consciousness).</span>
 
 <span style="font-size: 93%;"> You can check out my [Google Scholar profile](https://scholar.google.com/citations?user=NwCzTz8AAAAJ&hl=tr&oi=ao) and see some of the [models](https://github.com/CanOluk).</span>
 <div style="height:12px;"></div>
