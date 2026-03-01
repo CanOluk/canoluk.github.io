@@ -11,8 +11,8 @@ quote:
   text: "But it can also happen (even in a society that applies itself to being the fairest and best designed for assuring the harmonious development of all its members: this may be stated as a certainty without any risk of being mistaken) that isolated, maladjusted, lonely individuals, morbidly attached to their childhood, withdrawn into themselves and cultivating a more or less conscious taste for a certain form of defeat, by giving in to an apparently useless obsession, succeed in digging up and laying bare a fragment of reality that is still unknown."
   author: "Age of Suspicion, Nathalie Sarraute"
 reading:
-  title: "Man's Fate"
-  author: "André Malraux"
+  title: "The Midnight Library"
+  author: "Matt Haig"
 show_posts: false      # ← flip to true later to display post
 classes: blog-tight
 ---
