@@ -86,10 +86,10 @@ author:
   name             : "Can Oluk"
   avatar           : "can_oluk.JPG"
   bio              : " "
-  location         : "Zürich"
+  location         : "Boston"
   employer         :
   pubmed           :
-  googlescholar    : "https://scholar.google.com/citations?user=NwCzTz8AAAAJ&hl=tr&oi=ao"
+  googlescholar    : "[https://scholar.google.com/citations?user=NwCzTz8AAAAJ&hl=en](https://scholar.google.com/citations?user=NwCzTz8AAAAJ&hl=en)"
   email            : "cnoluk@gmail.com"
   researchgate     :
   uri              :
@@ -268,7 +268,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5
 # paginate_path: /page:num/
-timezone: Europe/Zurich
+timezone: America/New York
 
 # =======================
 # Plugins (GitHub Pages–supported)
